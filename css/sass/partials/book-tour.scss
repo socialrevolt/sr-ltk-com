@@ -1,0 +1,441 @@
+html {
+  width: 100%;
+    overflow-x: hidden;
+  body {
+    width: 100%;
+    overflow-x: hidden;
+    p {
+      line-height: 220%;
+      font-weight: 600;
+      margin-bottom: 48px;
+    }
+    .menu-toggle {
+      display: none;
+      font-size: 24px;
+    }
+    .slider {
+      &.desktop {
+        display: block;
+      }
+      &.mobile {
+        display: none;
+      }
+    }
+    #slideHeader {
+      .desktop {
+        display: block;
+        img {
+          // width: 120%;
+        }
+      }
+      .mobile {
+        display: none;
+      }
+    }
+  }
+}
+
+#slideHeader {
+  height: auto;
+}
+
+#missionBox {
+  position: relative;
+  z-index: -1;
+  margin-top: -480px;
+  .box {
+    background: #f2f2f2;
+    padding-top: 240px;
+    padding: 480px 21% 60px;
+    text-align: center;
+    p {
+      line-height: 240% !important;
+      font-weight: 500;
+      margin-bottom: 60px;
+      b {
+        color: #000;
+      }
+    }
+  }
+}
+
+#tourDates {
+  position: relative;
+  margin-bottom: 100px;
+  .box {
+    margin-top: -60px;
+    background: transparent;
+    border: 2px solid #000;
+    padding: 80px 0px 60px;
+    .tour-date {
+      margin-bottom: 50px;
+      color: #000;
+    }
+    h1 {
+      font-family: 'Didot' !important;
+      margin: 0px auto 20px;
+      color: #000;
+      font-size: 2.5rem;
+    }
+    h4 {
+      margin: 0px;
+      font-size: 1rem;
+      color: #000;
+    }
+  }
+  .credits {
+    max-width: 50%;
+    margin: 90px auto 8px;
+    p {
+      margin-bottom: 0px;
+      font-weight: 500;
+      line-height: 150%;
+    }
+    img {
+      margin-top: 0px;
+      max-width: 60%;
+    }
+  }
+}
+
+#testimonialSlider {
+  .slider {
+    // height: 400px;
+    width: 100%;
+    .slide {
+      // height: 400px;
+      width: 100%;
+      cursor: pointer;
+      .quote {
+        max-width: 40%;
+        margin-left: 80px;
+        margin-top: 45px;
+        font-size: 2rem;
+        color: #fff;
+        line-height: 140%;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+#buyTheBook {
+  margin-top: 160px;
+  .box {
+    background: #f2f2f2;
+    padding: 60px 160px;
+    .box-contain {
+      padding: 0px 5%;
+      margin: 0 auto;
+    }
+    img {
+      margin-top: -160px;
+    }
+  }
+}
+
+#followMyStory {
+  .box {
+    padding: 60px 160px;
+  }
+}
+
+#thumbnailStrip {
+  .thumbnail-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    .thumbnail {
+      width: 210px;
+      height: 210px;
+      display: inline-block;
+      margin-right: 18px;
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+  }
+}
+
+#downloadTheApp {
+  padding: 60px 0px;
+  margin-top: 60px;
+  color: #000 !important;
+  .desktop {
+    display: block;
+    margin-left: -60px;
+    margin-top: 15px;
+  }
+  .mobile {
+    display: none;
+  }
+  h1 {
+    font-family: 'Didot' !important;
+    font-size: 3rem;
+  }
+  p {
+    max-width: 55%;
+    margin-left: 50px;
+    margin-top: 70px;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0px auto 0px 50px;
+    padding: 0px;
+    li {
+      display: inline-block;
+      margin: 0px 10px;
+      width: 40%;
+      &:first-child {
+        margin-left: 0px;
+      }
+    }
+  }
+  .box {
+    position: relative;
+  }
+  .foreground {
+    position: absolute;
+    bottom: -10px;
+    right: 10px;
+    max-width: 200px;
+  }
+}
+
+.btn {
+  color: #000;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 8px 20px;
+  border: 2px solid #000;
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  &:hover {
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+@media all and (max-width: 767px) {
+  html {
+    font-size: 62.5% !important;
+    body {
+      font-size: 62.5% !important;
+      .slider {
+        &.desktop {
+          display: none !important;
+        }
+        &.mobile {
+          display: block !important;
+        }
+      }
+      .logo {
+        max-width: 75%;
+        margin: 30px auto !important;
+      }
+      .menu-toggle {
+        display: block;
+        margin-top:20px;
+        position: relative;
+        z-index: 8;
+      }
+      .btn {
+        line-height: 42px;
+        display: block;
+      }
+      .nav {
+        display: none;
+        position: absolute;
+        z-index: 5;
+        background: rgba(242,242,242,.95);
+        max-width: 75%;
+        left: 12.5%;
+        top: 30px;
+        &.active {
+          display: block !important;
+        }
+        ul {
+          li {
+            display: block;
+            margin: 40px auto;
+            a {
+              font-size: .825rem;
+              color: #000;
+            }
+          }
+        }
+      }
+      #slideHeader {
+        .desktop {
+          display: none;
+        }
+        .mobile {
+          .slider {
+            margin-bottom: 0px;
+          }
+          .slick-dots {
+            display: none !important;
+          }
+          display: block;
+        }
+        // height: 360px;
+      }
+      .container {
+        padding: 0px 12.5%;
+      }
+      #missionBox {
+        margin-top: 0px;
+        .box {
+          padding: 20px;
+        }
+      }
+      #tourDates {
+        margin-bottom: 0px;
+        .box {
+          border: 0px;
+          margin-top: 0px;
+          padding: 50px 0px;
+          .tour-date {
+            h1 {
+              margin-bottom: 4px;
+            }
+            a {
+              display: block;
+            }
+          }
+        }
+        .credits {
+          max-width: 75%;
+          p {
+            margin-bottom: 12px;
+          }
+        }
+      }
+      #testimonialSlider {
+        .container {
+          max-width: 100%;
+          padding: 0px;
+          .slider {
+            .slide {
+              .quote {
+                font-size: 1.4rem;
+                margin-left: 7.5%;
+                max-width: 55%;
+              }
+            }
+          }
+        }
+      }
+      #buyTheBook {
+        margin-top: 80px;
+        .box {
+          padding: 0px 10px 20px;;
+          img {
+            margin-top: -40px;
+          }
+        }
+      }
+      #followMyStory {
+        margin-top: 60px;
+        .box {
+          padding: 0px;
+        }
+      }
+      #thumbnailStrip {
+        .thumbnail-container {
+          margin-top: 40px;
+          text-align: center;
+          .thumbnail {
+            width: 40%;
+            height: auto;
+            margin: 10px;
+            &:nth-of-type(5) {
+              display: none;
+            }
+          }
+        }
+      }
+      #downloadTheApp { 
+        text-align: center;
+        .container {
+          padding: 0px 20px;
+        }
+        .mobile {
+          display: block;
+          h1 {
+            font-size: 2.4rem;
+          }
+        }
+        .desktop {
+          display: none;
+        }
+        p {
+          max-width: 100%;
+          margin-top: 30px;
+          margin-bottom: 0px;
+          margin-left: 0px;
+        }
+        color: #000 !important;
+        .images {
+          img {
+            display: none;
+            &.foreground {
+              display: block;
+              position: relative;
+              right: 0px;
+              bottom: 0px;
+              margin: 0 auto 0px;
+            }
+          }
+        }
+        ul {
+          margin-top: 60px;
+          margin-left: 0px;
+          li {
+            display: block;
+            width: 100%;
+            margin: 20px auto;
+            text-align: center;
+            img {
+              max-width: 60%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1000px) {
+  html {
+    body {
+      .nav {
+        ul {
+          li {
+            a {
+
+              padding: 8px 8px;
+            }
+          }
+        }
+      }
+
+      #tourDates {
+        .box {
+          max-width: 480px;
+          margin: -60px auto 0px;
+        }
+      }
+      #thumbnailStrip {
+        .thumbnail-container {
+          text-align: center;
+          .thumbnail {
+            width: 15%;
+          }
+        }
+      }
+    }
+  }
+}
