@@ -668,7 +668,10 @@ html {
       border: 1px solid #E1E1E1;
       padding: 12px;
       max-width: 90%;
-      margin-bottom: 55px; }
+      margin-bottom: 55px;
+      cursor: pointer;
+      transition: .2s all ease-in-out;
+      -webkit-transition: .2s all ease-in-out; }
       html body .posts-grid article h5 {
         margin-top: 0px; }
       html body .posts-grid article h4 {
@@ -677,6 +680,15 @@ html {
         font-weight: 600;
         margin-top: 8px;
         letter-spacing: 0px; }
+      html body .posts-grid article * {
+        word-wrap: break-word; }
+      html body .posts-grid article figure .grid-image {
+        transition: .2s all ease-in-out;
+        -webkit-transition: .2s all ease-in-out; }
+      html body .posts-grid article:hover {
+        box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.15); }
+        html body .posts-grid article:hover .grid-image {
+          opacity: .95; }
     html body .posts-tiles {
       position: relative; }
       html body .posts-tiles .arrows {

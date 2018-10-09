@@ -40,8 +40,14 @@ $query = new WP_Query(
 					<article>
 						<div class="row">
 							<div class="col-xs-12 col-md-5">
-								<figure>
-									<img src="http://placehold.it/150x150">
+								<figure style="max-width: 100%;">
+									<?php if ( has_post_thumbnail() ) : // Check if Thumbnail exists. ?>
+									<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+										<div class="grid-image" style="background: url('<?php echo get_the_post_thumbnail_url(); // Fullsize image for the single post. ?>') no-repeat center center; -webkit-background-size: cover; background-size: cover; -moz-background-size: cover; height: 120px; width: 100%;"></div>
+										
+									</a>
+									<a title="View posts by emmahill" class="image-credit" href="<?php echo site_url(); ?>/tag/<?php echo get_field('ltk_publisher'); ?>"><img src="http://localhost:8888/liketoknowit/wp-content/uploads/2018/09/ltklogo.svg"><?php echo get_field('ltk_publisher'); ?></a>
+								<?php endif; ?>
 								</figure>
 							</div>
 							<div class="col-xs-12 col-md-7">
