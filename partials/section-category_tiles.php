@@ -33,7 +33,7 @@
 						</div>
 					</div>
 
-					
+
 				<?php }
 				
 				?>
@@ -47,7 +47,7 @@
 
 			<div class="col-xs-12 col-md-3">
 				<div class="box">
-					<a href="http://google.com">
+					<a href="hyperurl.co/fjl8nn" target="_blank">
 						<h4 class="text--white">See More In The App</h4>
 						<div class="jarallax" data-speed="0.96" data-jarallax>
 							<img class="jarallax-img" src="http://sliketoknowit.wpengine.com/wp-content/uploads/2018/10/fitness-tile.jpg" >
