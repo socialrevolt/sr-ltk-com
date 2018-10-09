@@ -62,6 +62,10 @@ if (have_posts()) : while (have_posts()) : the_post();
     	if( get_row_layout() == 'posts_grid' )
       		get_template_part('partials/section', 'posts_grid');
 
+        // Product Callout 
+      if( get_row_layout() == 'general_page_header' )
+          get_template_part('partials/section', 'general_page_header');
+
       	// Product Callout 
     	if( get_row_layout() == 'full_width_advertisement' )
       		get_template_part('partials/section', 'full_width_advertisement');
