@@ -32,6 +32,12 @@ html {
   max-width: 100%;
   color: #000;
   overflow-x: hidden;
+  .full-width-advertisement {
+    padding: 0px !important;
+        .container {
+          max-width: 1440px !important;
+        }
+      }
   .ssba-share-text {
     display: none;
   }
@@ -309,6 +315,7 @@ html {
         }
       }
     }
+
     .single-post {
       .ltk-posts {
         position: relative;
@@ -329,6 +336,7 @@ html {
           }
         }
       }
+      
       .author-meta {
         img {
           max-width: 60px;
