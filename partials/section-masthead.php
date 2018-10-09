@@ -3,10 +3,21 @@
 
 		<?php
 
+
+		$selected_posts = get_sub_field('selected_posts');
+
 		// The Query
-		$the_query = new WP_Query(array(
-			'posts_per_page' => 5
-		));
+
+		if ($selected_posts) {
+			$args = array(
+				'post__in' => $selected_posts
+			);
+		} else {
+			$args = array(
+				'posts_per_page' => 5
+			);
+		}
+		$the_query = new WP_Query($args);
 
 		// The Loop
 		if ( $the_query->have_posts() ) {

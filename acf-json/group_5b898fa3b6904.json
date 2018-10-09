@@ -74,10 +74,10 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5bae841ff0245",
-                            "label": "Number of posts",
-                            "name": "number_of_posts",
-                            "type": "number",
+                            "key": "field_5bbcc7d99d364",
+                            "label": "Selected posts",
+                            "name": "selected_posts",
+                            "type": "post_object",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -86,13 +86,14 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "min": "",
-                            "max": "",
-                            "step": ""
+                            "post_type": [
+                                "post"
+                            ],
+                            "taxonomy": "",
+                            "allow_null": 0,
+                            "multiple": 1,
+                            "return_format": "id",
+                            "ui": 1
                         }
                     ],
                     "min": "",
@@ -375,5 +376,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1539098240
+    "modified": 1539098818
 }

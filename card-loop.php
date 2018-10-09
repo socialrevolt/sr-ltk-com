@@ -15,8 +15,6 @@ foreach ($category as $key => $cat) {
 
 ?>
 
-
-
 <div>
 	<article>
 		<figure>
