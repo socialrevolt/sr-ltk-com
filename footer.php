@@ -42,7 +42,7 @@
 	    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<?php wp_footer(); ?>
 
-    
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
 
 	</body>

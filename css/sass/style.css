@@ -502,8 +502,10 @@ html {
     max-width: 100%;
     color: #000;
     overflow-x: hidden; }
-    html body .full-width-advertisement .container {
-      max-width: 1440px !important; }
+    html body .full-width-advertisement {
+      padding: 0px !important; }
+      html body .full-width-advertisement .container {
+        max-width: 1440px !important; }
     html body .ssba-share-text {
       display: none; }
     html body .row {
@@ -524,8 +526,6 @@ html {
       padding-bottom: 0px !important; }
     html body .ltk-posts {
       padding-bottom: 0px !important; }
-    html body section {
-      padding: 4vw 0px; }
     html body a {
       color: #000;
       text-decoration: none; }
@@ -759,6 +759,19 @@ html {
       margin-top: 8px;
       margin-bottom: 0px;
       font-size: 1.4rem; }
+    html body .general-page-header .row {
+      min-height: 420px; }
+    html body .general-page-header .header-box {
+      background: #000;
+      padding: 20px 20px;
+      width: 100%; }
+      html body .general-page-header .header-box h2 {
+        margin: 0px !important;
+        text-transform: none !important;
+        font-family: 'Didot' !important; }
+        html body .general-page-header .header-box h2.bottom-line {
+          font-weight: 100 !important;
+          font-style: italic; }
     html body .show-mobile {
       display: none !important; }
       @media all and (max-width: 767px) {

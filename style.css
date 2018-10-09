@@ -539,7 +539,7 @@ html {
     html body .ltk-posts {
       padding-bottom: 0px !important; }
     html body section {
-      padding: 4vw 0px; }
+      /*padding: 4vw 0px; */ }
     html body a {
       color: #000;
       text-decoration: none; }
