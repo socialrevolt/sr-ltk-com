@@ -251,7 +251,8 @@ header {
           .nav ul li:last-child:hover ul {
             background: #000; }
             .nav ul li:last-child:hover ul li a {
-              color: #fff; }
+              color: #fff;
+              border: 0px !important; }
       .nav ul li a {
         text-transform: uppercase;
         padding: 12px 16px;
