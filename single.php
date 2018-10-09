@@ -113,7 +113,7 @@
 				</div>
 				<div class="col-xs-12 col-md-offset-2 col-md-3">
 					<div class="box sidebar">
-						<div class="ad-slider">
+						<div class="ad-slider desktop">
 							<?php 
 
 							$tags = get_the_tags();
@@ -136,13 +136,51 @@
 
 								$url = get_field('url'); 
 								$desktop_image = get_field('desktop_image'); ?>
-	 								<div>
+	 							<div>
 									<a href="<?php echo $url; ?>" target="_blank" class="ad-banner"><img src="<?php echo $desktop_image; ?>"></a>
 								</div>
-
+					
 								<?php endwhile;
 
 								endif;
+								
+								wp_reset_query(); 
+
+							?>
+						</div>
+						
+						<div class="ad-slider mobile">
+							<?php 
+
+							$tags = get_the_tags();
+							$r_tags = [];
+
+							// foreach ($tags as $key => $tag) {
+							// 	array_push($r_tags, $tag->term_id);
+							// }
+
+							$ad_args = array( 
+								'post_type' => 'rs_advertisement',
+								'post_status' => 'publish',
+								'tag' => 'sidebar'
+								// 'tag__in' => $r_tags
+							);
+
+							$ads = new WP_Query($ad_args);
+
+							if ( $ads->have_posts() ) : while ($ads->have_posts() ) : $ads->the_post();
+
+								$url = get_field('url'); 
+								$mobile_image = get_field('mobile_image'); ?>
+	 							<div>
+									<a href="<?php echo $url; ?>" target="_blank" class="ad-banner"><img src="<?php echo $mobile_image; ?>"></a>
+								</div>
+					
+								<?php endwhile;
+
+								endif;
+								
+								wp_reset_query(); 
 
 							?>
 						</div>

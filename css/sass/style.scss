@@ -5,51 +5,50 @@
  */
 
 // Modules
-@import "modules/variables";
-@import "modules/mixins";
-@import "modules/fonts";
-@import "modules/masthead.scss";
+@import 'modules/variables';
+@import 'modules/mixins';
+@import 'modules/fonts';
+@import 'modules/masthead.scss';
 
 // Partials
-@import "partials/reset";
-@import "partials/wordpress";
-@import "partials/utils";
-@import "partials/wrapper";
-@import "partials/header";
-@import "partials/nav";
-@import "partials/sidebar";
-@import "partials/footer";
-@import "partials/print";
+@import 'partials/reset';
+@import 'partials/wordpress';
+@import 'partials/utils';
+@import 'partials/wrapper';
+@import 'partials/header';
+@import 'partials/nav';
+@import 'partials/sidebar';
+@import 'partials/footer';
+@import 'partials/print';
 // @import "partials/book-tour.scss";
-
 
 html {
   font-size: 87.5% !important;
   overflow-x: hidden;
   max-width: 100%;
   body {
-  font-size: 87.5%;
-  max-width: 100%;
-  color: #000;
-  overflow-x: hidden;
-  .ssba-share-text {
-    display: none;
-  }
-  .row {
-    margin-left: 0px !important;
-    margin-right: 0px !important;
-  }
+    font-size: 87.5%;
+    max-width: 100%;
+    color: #000;
+    overflow-x: hidden;
+    .ssba-share-text {
+      display: none;
+    }
+    .row {
+      margin-left: 0px !important;
+      margin-right: 0px !important;
+    }
     .image-credit {
-      color: #8B8B8B;
+      color: #8b8b8b;
       font-weight: 100;
       text-align: right;
       margin-top: 8px;
-      font-size: .725rem;
+      font-size: 0.725rem;
       width: 100%;
       display: block;
       img {
         margin-right: 2px;
-        display:inline-block;
+        display: inline-block;
       }
     }
     .title-block {
@@ -132,7 +131,7 @@ html {
       background: transparent;
       color: #000;
       line-height: 100%;
-      font-size: .875rem;
+      font-size: 0.875rem;
       padding: 15px 20px 14px;
       font-weight: 300;
       letter-spacing: 1px;
@@ -140,9 +139,9 @@ html {
       text-transform: uppercase;
       font-family: 'Gotham';
       text-decoration: none !important;
-      transition: all .2s ease-in-out;
-      -webkit-transition: all .2s ease-in-out;
-      -moz-transition: all .2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
       &:hover {
         background: #000;
         color: #fff;
@@ -199,7 +198,7 @@ html {
         font-size: 1.2rem;
         max-width: 75%;
         margin: 0px auto 30px;
-      } 
+      }
       .image {
         height: 250px;
         border-left: 5px solid #fff;
@@ -219,11 +218,10 @@ html {
           width: 100%;
           height: 100%;
           position: absolute;
-          background: rgba(0,0,0,.5);
+          background: rgba(0, 0, 0, 0.5);
         }
       }
       .box {
-
         position: relative;
         h4 {
           margin: 0px;
@@ -239,18 +237,18 @@ html {
       width: 100%;
       /* the slides */
       .slick-slide {
-          margin: 0 10px;
+        margin: 0 10px;
       }
       .slick-track {
         margin: 0px !important;
       }
       .slick-list {
-          margin: 0 -10px;
+        margin: 0 -10px;
       }
     }
     .posts-grid {
       article {
-        border: 1px solid #E1E1E1;
+        border: 1px solid #e1e1e1;
         padding: 12px;
         max-width: 90%;
         margin-bottom: 55px;
@@ -274,11 +272,11 @@ html {
         top: 50%;
         width: 100%;
         i {
-          color: rgba(0,0,0,.15);
+          color: rgba(0, 0, 0, 0.15);
           font-size: 28px;
           cursor: pointer;
-          &:hover  {
-            color: rgba(0,0,0,1);
+          &:hover {
+            color: rgba(0, 0, 0, 1);
           }
         }
         .next {
@@ -299,11 +297,11 @@ html {
           top: 50%;
           width: 100%;
           i {
-            color: rgba(0,0,0,.15);
+            color: rgba(0, 0, 0, 0.15);
             font-size: 28px;
             cursor: pointer;
-            &:hover  {
-              color: rgba(0,0,0,1);
+            &:hover {
+              color: rgba(0, 0, 0, 1);
             }
           }
           .next {
@@ -340,19 +338,18 @@ html {
       }
       .category {
         h4 {
-          color: #8B8B8B;
+          color: #8b8b8b;
           margin: 0px;
         }
       }
       .date {
-        color: #8B8B8B;
+        color: #8b8b8b;
         font-weight: 300;
         margin-top: 20px;
         display: block;
         letter-spacing: 2.5px;
-        font-size: .875rem;
+        font-size: 0.875rem;
       }
-      
     }
     article {
       // width: auto;
@@ -366,6 +363,29 @@ html {
         margin-top: 8px;
         margin-bottom: 0px;
         font-size: 1.4rem;
+      }
+    }
+
+    .ad-slider {
+      &.mobile {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  html {
+    body {
+      .ad-slider {
+        &.desktop {
+          display: none;
+        }
+        &.mobile {
+          display: block;
+          text-align: center;
+          margin-top: 40px;
+        }
       }
     }
   }

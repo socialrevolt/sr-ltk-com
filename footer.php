@@ -32,14 +32,13 @@
 			</footer>
 			<!-- /footer -->
 
-			
-
-		</div>
 		<!-- /wrapper -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jarallax/1.10.3/jarallax.min.js"></script>
 	    <script src="https://cdnjs.cloudflare.com/ajax/libs/jarallax/1.10.0/jarallax-element.js"></script>
 	    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	    
+	    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 		<?php wp_footer(); ?>
 
     
