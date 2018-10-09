@@ -367,6 +367,8 @@ header {
     .footer .powered-by .learn-more {
       text-transform: uppercase;
       color: #767676; }
+  .footer .download-buttons img {
+    height: 40px; }
   .footer .ltk-footer {
     margin-top: 32px; }
     .footer .ltk-footer .logo-img {

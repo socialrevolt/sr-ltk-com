@@ -20,12 +20,12 @@
 								<div class="row center-xs">
 									<div class="col-xs-12 col-md-3 end-xs">
 										<div class="box">	
-											<img src="http://placehold.it/125x50">
+											<img src="<?php echo bloginfo('template_url'); ?>/img/download-ltk-ios.png">
 										</div>
 									</div>
 									<div class="col-xs-12 col-md-3 start-xs">
 										<div class="box">
-											<img src="http://placehold.it/125x50">
+											<img src="<?php echo bloginfo('template_url'); ?>/img/download-ltk-android.png">
 										</div>
 									</div>
 								</div>
