@@ -755,6 +755,15 @@ html {
       @media all and (max-width: 767px) {
         html body .posts-tiles .arrows {
           display: block; } }
+    html body .sponsored-by {
+      line-height: 28px; }
+      html body .sponsored-by h3 {
+        font-weight: 100;
+        text-transform: uppercase;
+        font-size: 14px; }
+        html body .sponsored-by h3 img {
+          height: 14px;
+          margin-top: -6px; }
     html body .single-post .ltk-posts {
       position: relative; }
       html body .single-post .ltk-posts .arrows {

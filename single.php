@@ -7,7 +7,11 @@
 			<div class="row">
 				<div class="col-xs-12 col-md-7 content">
 					<div class="box">
-						<?php if ( have_posts() ) : while (have_posts() ) : the_post(); ?>
+						<?php if ( have_posts() ) : while (have_posts() ) : the_post(); 
+
+							$is_sponsored = get_field('is_sponsored');
+
+							?>
 
 							<!-- article -->
 							<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -35,6 +39,12 @@
 									<?php the_title(); ?>
 								</h1></a>
 								<!-- /post title -->
+
+								<?php if ($is_sponsored) { ?>
+									<div class="sponsored-by">
+										<h3>Sponsored By <img src="<?php echo get_field('sponsored_by_logo'); ?>"></h3>
+									</div>
+								<?php } ?>
 
 								<!-- post thumbnail -->
 								<?php if ( has_post_thumbnail() ) : // Check if Thumbnail exists. ?>
@@ -119,16 +129,19 @@
 							$tags = get_the_tags();
 							$r_tags = [];
 
-							// foreach ($tags as $key => $tag) {
-							// 	array_push($r_tags, $tag->term_id);
-							// }
+							if (get_field('sponsored_ad_post')) {
+								$ad_args = array(
+									'p' => get_field('sponsored_ad_post')->ID
+								);
+							} else {
+								$ad_args = array( 
+									'post_type' => 'rs_advertisement',
+									'post_status' => 'publish',
+									'tag' => 'sidebar'
+								);
+							}
 
-							$ad_args = array( 
-								'post_type' => 'rs_advertisement',
-								'post_status' => 'publish',
-								'tag' => 'sidebar'
-								// 'tag__in' => $r_tags
-							);
+							
 
 							$ads = new WP_Query($ad_args);
 
