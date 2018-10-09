@@ -26,6 +26,21 @@
           color: #000;
           border: 1px solid #000;
         }
+        &:hover {
+          background: #000;
+          a {
+            color: #fff;
+            border-color: #fff;
+          }
+          ul {
+            background: #000;
+            li {
+              a {
+                color: #fff;
+              }
+            }
+          }
+        }
       }
       a {
         text-transform: uppercase;
@@ -50,7 +65,7 @@
         }
       }
       ul {
-        display: none;
+        display: block;
         width: 100%;
         background: #F2F2F2;
           box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
@@ -58,10 +73,20 @@
         left: 0px;
         top: 0px;
         padding-top: 60px;
+        z-index: 8;
         li {
           display: block;
           text-align: left;
           padding: 0px 0px;
+          &:last-child {
+            display: block;
+            text-align: left;
+            padding: 0px 0px;
+            a {
+              border: 0px;
+              color: #000;
+            }
+          }
           a {
             color: #646464;
             display: block;
