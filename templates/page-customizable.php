@@ -6,23 +6,6 @@ get_header(); ?>
 
 <?php 
 
-// $query = new WP_Query( 
-// 	array( 
-// 		'cat' => 4, // Display posts that have this category (and any children of that category), using category id
-// 		'category__in' => 4, // Display posts that have this category (not children of that category)
-// 		'cat' => '2,6,17,38', // Display posts that have these categories, using category id
-// 		'cat' => '-12,-34,-56', // Display all posts except those from a category by prefixing its id with a '-' (minus) sign.
-// 		'category__and' => array( 2, 6 ), // Display posts that are in multiple categories.
-// 		'category__in' => array( 2, 6 ), // To display posts from either category 2 OR 6, you could use cat as mentioned above, or by using category__in (note this does not show posts from any children of these categories)
-// 		'category__not_in' => array( 2, 6 ), // You can also exclude multiple categories this way
-// 		's' => 'keyword', // Display posts that match the search term "keyword"
-// 	),
-// );
-
-// if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post();
-
-// endwhile; endif;
-
 ?>
 
 <main class="main" role="main">
@@ -63,7 +46,7 @@ if (have_posts()) : while (have_posts()) : the_post();
       		get_template_part('partials/section', 'posts_grid');
 
         // Product Callout 
-      if( get_row_layout() == 'general_page_header' )
+      if( get_row_layout() == 'general_header' )
           get_template_part('partials/section', 'general_page_header');
 
       	// Product Callout 

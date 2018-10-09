@@ -761,6 +761,19 @@ html {
       margin-top: 8px;
       margin-bottom: 0px;
       font-size: 1.4rem; }
+    html body .general-page-header .row {
+      min-height: 420px; }
+    html body .general-page-header .header-box {
+      background: #000;
+      padding: 20px 20px;
+      width: 100%; }
+      html body .general-page-header .header-box h2 {
+        margin: 0px !important;
+        text-transform: none !important;
+        font-family: 'Didot' !important; }
+        html body .general-page-header .header-box h2.bottom-line {
+          font-weight: 100 !important;
+          font-style: italic; }
     html body .show-mobile {
       display: none !important; }
       @media all and (max-width: 767px) {

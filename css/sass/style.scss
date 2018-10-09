@@ -394,6 +394,26 @@ html {
         font-size: 1.4rem;
       }
     }
+    .general-page-header {
+      // min-height: 420px;
+      .row {
+        min-height: 420px;
+      }
+      .header-box {
+        background: #000;
+        padding: 20px 20px;
+        width: 100%;
+        h2 {
+          margin: 0px !important;
+          text-transform: none !important;
+          font-family: 'Didot' !important;
+          &.bottom-line {
+            font-weight: 100 !important;
+            font-style: italic;
+          }
+        }
+      }
+    }
     .show-mobile {
       display: none !important;
       @media all and (max-width: 767px) {

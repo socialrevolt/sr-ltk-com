@@ -74,10 +74,10 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5bbcc7d99d364",
-                            "label": "Selected posts",
-                            "name": "selected_posts",
-                            "type": "post_object",
+                            "key": "field_5bae841ff0245",
+                            "label": "Number of posts",
+                            "name": "number_of_posts",
+                            "type": "number",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -86,14 +86,13 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "post_type": [
-                                "post"
-                            ],
-                            "taxonomy": "",
-                            "allow_null": 0,
-                            "multiple": 1,
-                            "return_format": "id",
-                            "ui": 1
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "min": "",
+                            "max": "",
+                            "step": ""
                         }
                     ],
                     "min": "",
@@ -128,6 +127,78 @@
                             "multiple": 1,
                             "return_format": "object",
                             "ui": 1
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5bbd06c70b2f0": {
+                    "key": "layout_5bbd06c70b2f0",
+                    "name": "general_header",
+                    "label": "Page Header",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5bbd06cf0b2f1",
+                            "label": "Image",
+                            "name": "image",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "url",
+                            "preview_size": "thumbnail",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_5bbd06dc0b2f2",
+                            "label": "Header Text",
+                            "name": "header",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5bbd06e70b2f3",
+                            "label": "Subheader Text",
+                            "name": "subheader",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
                         }
                     ],
                     "min": "",
@@ -376,5 +447,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1539098818
+    "modified": 1539114744
 }
