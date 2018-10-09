@@ -654,6 +654,12 @@ html {
       padding: 0px !important; }
       html body .promotion-boxes .box {
         padding: 20px 40px; }
+      html body .promotion-boxes .slick-slide {
+        margin: 0 5px; }
+      html body .promotion-boxes .slick-track {
+        margin: 0px !important; }
+      html body .promotion-boxes .slick-list {
+        margin: 0 -5px; }
     html body .advertisement {
       padding: 0px !important; }
       html body .advertisement .float-image {
