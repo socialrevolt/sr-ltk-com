@@ -342,6 +342,13 @@ header {
       font-size: .725rem; }
   .footer .logo-img {
     margin: 8px auto; }
+  .footer .powered-by {
+    color: #767676; }
+    .footer .powered-by p {
+      color: #767676; }
+    .footer .powered-by .learn-more {
+      text-transform: uppercase;
+      color: #767676; }
   .footer .ltk-footer {
     margin-top: 32px; }
     .footer .ltk-footer .logo-img {
@@ -362,26 +369,37 @@ header {
           color: #fff; }
         .footer .ltk-footer ul li:last-child a {
           border-right: 0px; }
-  .footer nav ul {
-    margin: 0px;
-    padding: 0px;
-    list-style-type: none; }
-    .footer nav ul li {
-      display: inline-block;
-      margin: 8px 20px; }
-      .footer nav ul li a {
-        text-transform: uppercase;
-        font-size: .725rem;
-        color: #767676;
-        font-family: 'Gotham';
-        font-weight: 300;
-        transition: all .2s ease-in-out;
-        -webkit-transition: all .2s ease-in-out;
-        -moz-transition: all .2s ease-in-out; }
-        .footer nav ul li a:hover {
-          color: #000;
-          font-weight: 600;
-          text-decoration: none; }
+  .footer .copyright {
+    display: inline-block;
+    margin-right: 8px;
+    color: #767676; }
+  .footer nav {
+    display: inline-block; }
+    .footer nav ul {
+      margin: 0px;
+      padding: 0px;
+      list-style-type: none; }
+      .footer nav ul li {
+        display: inline-block;
+        margin: 8px 0px !important; }
+        .footer nav ul li a {
+          text-transform: none !important;
+          font-size: .725rem;
+          color: #767676;
+          font-family: 'Gotham';
+          font-weight: 300;
+          transition: all .2s ease-in-out;
+          -webkit-transition: all .2s ease-in-out;
+          -moz-transition: all .2s ease-in-out;
+          border-right: 1px solid #767676;
+          margin-right: 4px;
+          padding-right: 6px; }
+          .footer nav ul li a:hover {
+            color: #000;
+            font-weight: 600;
+            text-decoration: none; }
+        .footer nav ul li:last-child a {
+          border: 0px; }
   .footer .social {
     margin: 10px auto 0px;
     padding: 0px !important;

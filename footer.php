@@ -12,20 +12,40 @@
 									<li><a href="https://www.instagram.com/liketoknow.it.BRASIL/" target="_blank">@LIKEtoKNOW.it.brasil</a></li>
 									<li><a href="https://www.instagram.com/liketoknow.it.family/?hl=en" target="_blank">@LIKEtoKNOW.it.family</a></li>
 									<li><a href="https://www.instagram.com/liketoknow.it.home/?hl=en" target="_blank">@LIKEtoKNOW.it.home</a></li>
-									
 								</ul>
 							</div>	
 
-							<p>Copyright 2018 rewardStyle.com | <a href="<?php echo site_url(); ?>/privacy-policy">Privacy Policy</a></p>
-							<nav>
-							<?php 
 
-									$args = array('menu' => 'Footer' );
+							<div class="download-buttons">
+								<div class="row center-xs">
+									<div class="col-xs-12 col-md-3 end-xs">
+										<div class="box">	
+											<img src="http://placehold.it/125x50">
+										</div>
+									</div>
+									<div class="col-xs-12 col-md-3 start-xs">
+										<div class="box">
+											<img src="http://placehold.it/125x50">
+										</div>
+									</div>
+								</div>
+							</div>
 
-									wp_nav_menu($args); 
+							<div class="powered-by">
+								<div class="row bottom-xs">
+									<div class="col-xs-12 col-md-12">
+										<div class="box">
+											<p>powered by <img src="http://placehold.it/120x40"></p>
+											<p class="learn-more">Learn more about <a href="">Influencers</a>+<a href="">Brands</a></p>
+										</div>
+									</div>
+								</div>	
+							</div>
 
-							?>
+							<p class="copyright">Copyright 2018 rewardStyle.com</p><nav>
+							<?php  $args = array('menu' => 'Footer' ); wp_nav_menu($args); ?>
 							</nav>
+							
 						</div>
 					</div>
 				</div>

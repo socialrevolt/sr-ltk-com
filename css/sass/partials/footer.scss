@@ -15,6 +15,16 @@
   .logo-img {
     margin: 8px auto;
   }
+  .powered-by {
+    color: #767676;
+    p {
+      color: #767676;
+    }
+    .learn-more {
+      text-transform: uppercase;
+      color: #767676;
+    }
+  }
   .ltk-footer {
     .logo-img {
       max-width: 130px;
@@ -44,17 +54,22 @@
       }
     }
   }
+  .copyright {
+    display: inline-block;
+    margin-right: 8px;
+    color: #767676;
+  }
   nav {
+    display: inline-block;
     ul {
       margin: 0px;
       padding: 0px;
       list-style-type: none;
       li {
         display: inline-block;
-        margin: 8px 20px;
-        
-      a {
-          text-transform: uppercase;
+        margin: 8px 0px !important;
+        a {
+          text-transform: none !important;
           font-size: .725rem;
           color: #767676;
           font-family: 'Gotham';
@@ -62,10 +77,18 @@
           transition: all .2s ease-in-out;
         -webkit-transition: all .2s ease-in-out;
         -moz-transition: all .2s ease-in-out;
+        border-right: 1px solid #767676;
+        margin-right: 4px;
+        padding-right: 6px;
           &:hover {
             color: #000;
             font-weight: 600;
             text-decoration: none;
+          }
+        }
+        &:last-child {
+          a {
+            border: 0px;
           }
         }
       }
