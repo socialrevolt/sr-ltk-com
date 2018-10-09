@@ -63,6 +63,27 @@
       ]
     });
 
+    $('.promotion-boxes .promotion-slider').slick({
+      slidesToShow: 2,
+      autoplay: true,
+      speed: 600,
+      autoplaySpeed: 4200,
+      dots: false,
+      arrows: false,
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            fade: true,
+            dots: false
+          }
+        }
+      ]
+    });
+
     $('.ltk-slider').slick({
       slidesToShow: 1,
       autoplay: true,

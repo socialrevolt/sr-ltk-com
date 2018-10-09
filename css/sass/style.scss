@@ -368,5 +368,16 @@ html {
         font-size: 1.4rem;
       }
     }
+    .show-mobile {
+      display: none !important;
+      @media all and (max-width: 767px) {
+        display: block !important;
+      }
+    }
+    .hide-mobile {
+      @media all and (max-width: 767px) {
+        display: none;
+      }
+    }
   }
 }
