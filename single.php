@@ -85,20 +85,36 @@
 									endif;
 										?>
 										<div>
-											<div class="row">
-												<div class="col-xs-12">
-													<div class="box">
-														<a href="https://ltk.app.link/5GbVhN7o9N" target="_blank">
-															<div class="app-banner">
-																<h1 class="text--white">Headline</h1>
-																<p class="text--white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-																tempor incididunt ut labore et dolore magna aliqua.</p>
-																<a href="https://ltk.app.link/5GbVhN7o9N" target="_blank" class="btn">CTA Text</a>
-															</div>
-														</a>
+											<?php if (get_sub_field('slide_headline')) { ?>
+												<div class="row">
+													<div class="col-xs-12">
+														<div class="box">
+															<a href="<?php echo get_sub_field('slide_url'); ?>" target="_blank">
+																<div class="app-banner">
+																	<h1 class="text--white"><?php echo get_sub_field('slide_headline'); ?></h1>
+																	<p class="text--white"><?php echo get_sub_field('slide_copy'); ?></p>
+																	<a href="<?php echo get_sub_field('slide_url'); ?>" target="_blank" class="btn"><?php echo get_sub_field('slide_cta'); ?></a>
+																</div>
+															</a>
+														</div>
 													</div>
 												</div>
-											</div>
+											<?php } else { ?>
+												<div class="row">
+													<div class="col-xs-12">
+														<div class="box">
+															<a href="https://ltk.app.link/5GbVhN7o9N" target="_blank">
+																<div class="app-banner">
+																	<h1 class="text--white">Download the app.</h1>
+																	<p class="text--white">discover and follow your favorite influencers</p>
+																	<a href="https://ltk.app.link/5GbVhN7o9N" target="_blank" class="btn">DOWNLOAD</a>
+																</div>
+															</a>
+														</div>
+													</div>
+												</div>
+											<?php } ?>
+											
 										</div>
 
 									</div>

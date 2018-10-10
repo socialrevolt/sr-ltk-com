@@ -87,6 +87,95 @@
             "multiple": 0,
             "return_format": "object",
             "ui": 1
+        },
+        {
+            "key": "field_5bbe6a9087c60",
+            "label": "End Slide of Gallery",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5bbe6aa087c61",
+            "label": "Slide Headline",
+            "name": "slide_headline",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Download the app.",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5bbe6aad87c62",
+            "label": "Slide Copy",
+            "name": "slide_copy",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "discover and follow your favorite influencers",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 3,
+            "new_lines": ""
+        },
+        {
+            "key": "field_5bbe6aba87c63",
+            "label": "Slide CTA",
+            "name": "slide_cta",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "DOWNLOAD",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5bbe6ac187c64",
+            "label": "Slide URL",
+            "name": "slide_url",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "https:\/\/ltk.app.link\/5GbVhN7o9N",
+            "placeholder": ""
         }
     ],
     "location": [
@@ -106,5 +195,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1539120264
+    "modified": 1539205892
 }
