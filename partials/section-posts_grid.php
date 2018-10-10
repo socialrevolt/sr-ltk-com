@@ -2,17 +2,21 @@
 
 $count = get_sub_field('count');
 
+if (!$count) {
+	$count = 10;
+}
+
 $tags = get_sub_field('taxonomy');
 $categories = get_sub_field('category');
 // $sort_by = get_sub_field('sort_by');
 
 $query = new WP_Query( 
-					array( 
-						'category__and' => $categories,
-						'tag__and' => $tags,
-						'count' => 3
-					)
-				);
+		array( 
+			'category__in' => $categories,
+			'tag__in' => $tags,
+			'posts_per_page' => $count
+		)
+	);
 
 ?>
 

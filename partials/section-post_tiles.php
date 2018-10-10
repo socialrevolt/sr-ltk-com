@@ -23,8 +23,8 @@ $title = get_sub_field('title');
 
 				$query = new WP_Query( 
 					array( 
-						'category__and' => $categories, // Display posts that have this category (and any children of that category), using category id
-						'tag__and' => $tags
+						'category__in' => $categories, // Display posts that have this category (and any children of that category), using category id
+						'tag__in' => $tags
 						// 'category__in' => 4, // Display posts that have this category (not children of that category)
 						// 'cat' => '2,6,17,38', // Display posts that have these categories, using category id
 						// 'cat' => '-12,-34,-56', // Display all posts except those from a category by prefixing its id with a '-' (minus) sign.
