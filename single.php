@@ -88,7 +88,14 @@
 											<div class="row">
 												<div class="col-xs-12">
 													<div class="box">
-														<a href="https://ltk.app.link/5GbVhN7o9N" target="_blank"><img src="http://placehold.it/600x400"></a>
+														<a href="https://ltk.app.link/5GbVhN7o9N" target="_blank">
+															<div class="app-banner">
+																<h1 class="text--white">Headline</h1>
+																<p class="text--white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+																tempor incididunt ut labore et dolore magna aliqua.</p>
+																<a href="https://ltk.app.link/5GbVhN7o9N" target="_blank" class="btn">CTA Text</a>
+															</div>
+														</a>
 													</div>
 												</div>
 											</div>
