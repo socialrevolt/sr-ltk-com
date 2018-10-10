@@ -546,7 +546,7 @@ html {
     color: #000;
     overflow-x: hidden; }
     html body .full-width-advertisement {
-      padding: 0px !important; }
+      padding: 0px 0px 2vw !important; }
       html body .full-width-advertisement .container {
         max-width: 1440px !important; }
     html body .ssba-share-text {
