@@ -545,6 +545,19 @@ html {
     max-width: 100%;
     color: #000;
     overflow-x: hidden; }
+    html body .post-tags ul {
+      list-style-type: none;
+      margin: 0px;
+      padding: 0px; }
+      html body .post-tags ul li {
+        display: inline-block; }
+        html body .post-tags ul li a {
+          margin-right: 8px;
+          font-size: .8rem;
+          padding-right: 8px;
+          border-right: 1px solid #000; }
+        html body .post-tags ul li:last-child a {
+          border: 0px; }
     html body .post-tags a {
       text-transform: uppercase; }
     html body .full-width-advertisement {

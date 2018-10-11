@@ -68,9 +68,13 @@
 								<?php the_content(); // Dynamic Content. ?>
 
 								<div class="post-tags">
+									<ul>
 									<?php foreach ($tags as $key => $tag) { ?>
-										<a href="<?php echo site_url(); ?>/tag/<?php echo $tag->slug; ?>"><?php echo $tag->slug; ?></a> | 
+										<li>
+											<a href="<?php echo site_url(); ?>/tag/<?php echo $tag->slug; ?>"><?php echo $tag->slug; ?></a>
+										</li> 
 									<?php } ?>
+									</ul>
 								</div>
 
 
