@@ -10,7 +10,8 @@
 
 		if ($selected_posts) {
 			$args = array(
-				'post__in' => $selected_posts
+				'post__in' => $selected_posts,
+				'orderby' => 'post__in'
 			);
 		} else {
 			$args = array(
