@@ -56,7 +56,8 @@
 
 		<header class="header clear bg--gray" role="banner">
 			<div class="menu-toggle">
-				<i class="fas fa-bars"></i>
+				<img class="toggle" src="<?php echo site_url(); ?>/wp-content/uploads/2018/09/ltklogo.svg">
+				<i class="fas fa-times"></i>
 			</div>
 			<div class="container">
 				<div class="row middle-xs center-xs">

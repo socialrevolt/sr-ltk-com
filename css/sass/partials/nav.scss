@@ -111,7 +111,71 @@
     }
   }
   @media all and (max-width: 767px) {
-    display: none;
+    // display: none;
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 64px;
+    background: rgba(0,0,0,.95);
+    z-index: 8;
+    width: 100%;
+    padding: 20px 0px;
+    opacity: 0 !important;
+    &.visible {
+      opacity: 1 !important;
+    }
+    ul {
+      li {
+        float: none !important;
+        text-align: center !important;
+        display: block !important;
+        padding-top: 16px !important;
+        padding-bottom: 16px !important;
+        &.cta {
+          a {
+            border: 1px solid #fff !important;
+          }
+        }
+        &.active {
+          a {
+            color: #fff !important;
+          }
+        }
+        a {
+          text-align: center;
+          letter-spacing: 3px;
+          color: #fff !important;
+          font-size: 16px !important;
+        }
+        ul {
+          display: block;
+          height: 0px;
+          opacity: 0 !important;
+          background: transparent !important;
+          width: 100% !important;
+          margin: 0px !important;
+          left: 0px !important;
+          padding: 0px !important;
+          position: relative !important;
+          margin-top: 8px !important;
+          transition: all .2s ease-in-out;
+          -webkit-transition: all .2s ease-in-out;
+          li {
+            padding-top: 0px !important;
+            padding-bottom: 0px !important;
+            a {
+              padding: 10px 0px !important;
+              font-size: 12px !important;
+            }
+          }
+          &.active {
+            display: block;
+            height: auto !important;
+            opacity: 1 !important;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -122,8 +186,32 @@
 }
 
 .menu-toggle {
-    display: none;
+  display: none;
+  &.active {
+    img {
+      display: none;
+    }
+    i {
+      display: block;
+      color: #fff;
+      margin-top: 4px;
+      margin-right: 4px;
+    }
   }
+  @media all and (max-width: 767px) {
+    position: absolute;
+    top: 16px;
+    font-size: 20px;
+    right: 16px;
+    display: block !important;
+    img {
+      height: 30px;
+    }
+    i {
+      display: none;
+    }
+  }
+}
 
 .search {
   display: inline-block;

@@ -2,6 +2,27 @@
 	"use strict";
 
 	$(function () {
+    $('.menu-toggle').click(function() {
+      $(this).toggleClass('active');
+      $('.header').toggleClass('active');
+      $('.nav').toggleClass('visible');
+      $('.nav').find('.active').removeClass('.active');
+    })
+
+      $('.menu-item-has-children').click(function(e){
+        e.preventDefault();        
+        if ($(this).hasClass('active')) {
+          $(this).removeClass('active');
+          $(this).find('ul').removeClass('active');
+        } else {
+          $('.nav').find('.active').removeClass('active');
+          $(this).toggleClass('active');
+          $(this).find('ul').toggleClass('active');
+        }
+
+        
+        
+      });
 
     	$('.slider').slick({
     		dots: true,
@@ -57,7 +78,7 @@
             slidesToShow: 1,
             slidesToScroll: 1,
             infinite: true,
-            dots: false
+            dots: true
           }
         }
       ]

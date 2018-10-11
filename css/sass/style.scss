@@ -58,10 +58,13 @@ html {
   }
   .full-width-advertisement {
     padding: 0px 0px 2vw !important;
-      .container {
-        max-width: 1440px !important;
-      }
+    .container {
+      max-width: 1440px !important;
     }
+    @media all and (max-width: 767px) {
+      margin-bottom: 40px;
+    }
+  }
   .app-banner {
     background: #000;
     width: 100%;
@@ -84,6 +87,7 @@ html {
   .row {
     margin-left: 0px !important;
     margin-right: 0px !important;
+    width: 100%;
   }
     .image-credit {
       color: #8B8B8B;
@@ -231,6 +235,12 @@ html {
       .slick-list {
           margin: 0 -5px;
       }
+      @media all and (max-width: 767px) {
+        // img {
+        //   height: auto;
+        //   width: 100%;
+        // }
+      }
     }
     .advertisement {
       padding: 0px !important;
@@ -316,6 +326,23 @@ html {
           }
         }
       }
+      @media all and (max-width: 767px) {
+        .jarallax {
+          height: 140px !important;
+          margin-bottom: 30px;
+        }
+        .box {
+          h4 {
+            top: 45% !important;
+            font-size: 12px !important;
+          }
+          &.last {
+            h4 {
+              top: 38% !important;
+            }
+          }
+        }
+      }
     }
     .post-slider {
       max-width: 100%;
@@ -366,6 +393,17 @@ html {
           }
         }
       }
+      @media all and (max-width: 767px) {
+        article {
+          max-width: 100% !important;
+          margin-bottom: 30px !important;
+          figure {
+            .grid-image {
+              height: 90px !important;
+            }
+          }
+        }
+      }
     }
     .posts-tiles {
       position: relative;
@@ -387,8 +425,28 @@ html {
         }
       }
       @media all and (max-width: 767px) {
+        margin-bottom: 30px !important;
         .arrows {
           display: block;
+        }
+        h2 {
+          font-size: 18px;
+          margin-top: 0px !important;
+        }
+        h3 {
+          font-size: 24px;
+          margin-bottom: 0px;
+        }
+        p {
+          margin-top: 12px;
+        }
+        .text--tag {
+          a {
+            font-size: 8px !important;
+          }
+        }
+        .col-xs-12 {
+          padding-left: 0px;
         }
       }
     }
@@ -523,6 +581,35 @@ html {
           letter-spacing: 1px !important;
           border-radius: 0px !important;
         }
+      }
+      @media all and (max-width: 767px) {
+        .container {
+          padding: 0px 0px;
+        }
+        h1 {
+          font-size: 28px;
+          text-align: center;
+          margin-bottom: 0px;
+        }
+        .capture-form {
+          input {
+            line-height: 36px !important;
+            height: 36px !important;
+            &.email {
+              border: 0px !important;
+              text-transform: lowercase !important;
+              margin-bottom: 20px !important;
+            }
+          }
+          .button {
+            margin-left: 0px !important;
+            width: 160px !important;
+            letter-spacing: 3px !important;
+            font-size: 12px !important;
+            margin-bottom: 12px !important;
+          }
+        }
+        
       }
     }
     .general-page-header {

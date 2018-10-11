@@ -303,7 +303,7 @@ header {
             padding: 8px 0px 8px 16px; }
   @media all and (max-width: 767px) {
     .nav {
-      display: none; } }
+      } }
 
 .nav-container .box {
   text-align: right; }

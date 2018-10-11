@@ -43,7 +43,7 @@ $query = new WP_Query(
 				<div class="box">
 					<article>
 						<div class="row">
-							<div class="col-xs-12 col-md-5">
+							<div class="col-xs-5 col-md-5">
 								<figure style="max-width: 100%;">
 									<?php if ( has_post_thumbnail() ) : // Check if Thumbnail exists. ?>
 									<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
@@ -54,7 +54,7 @@ $query = new WP_Query(
 								<?php endif; ?>
 								</figure>
 							</div>
-							<div class="col-xs-12 col-md-7">
+							<div class="col-xs-7 col-md-7">
 								<div class="box">
 									<h5 class="text--tag"><?php echo $displayCat->name; ?></h5>
 									<h4><?php echo get_the_title(); ?></h4>

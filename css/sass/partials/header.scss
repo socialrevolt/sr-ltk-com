@@ -16,12 +16,23 @@ header {
 	}
 	@media all and (max-width: 767px) {
 		text-align: center;
+		padding: 24px 0px;
+		&.active {
+			background: #000 !important;
+		}
 		.logo {
 			text-align: center;
+			margin: 0px auto;
+			img {
+				height: 20px;
+				text-align: center;
+				margin: 0px auto;
+			}
 			a {
 				width: 100%;
 				display: block;
 				margin: 0 auto;
+				text-align: center;
 			}
 		}
 	}

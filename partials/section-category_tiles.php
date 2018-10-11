@@ -22,7 +22,7 @@
 
 					?>
 
-					<div class="col-xs-12 col-md-3">
+					<div class="col-xs-6 col-md-3">
 						<div class="box">
 							<a href="<?php echo site_url(); ?>/categories/<?php echo $value->slug; ?>">
 								<h4 class="text--white"><?php echo $value->name; ?></h4>
@@ -45,7 +45,7 @@
 
 			?>
 
-			<div class="col-xs-12 col-md-3">
+			<div class="col-xs-6 col-md-3">
 				<div class="box last">
 					<a href="hyperurl.co/fjl8nn" target="_blank">
 						<h4 class="text--white">See More In The App</h4>
