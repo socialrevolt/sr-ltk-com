@@ -51,7 +51,7 @@ $query = new WP_Query(
 										<div class="grid-image" style="background: url('<?php echo get_the_post_thumbnail_url(); // Fullsize image for the single post. ?>') no-repeat center center; -webkit-background-size: cover; background-size: cover; -moz-background-size: cover; height: 120px; width: 100%;"></div>
 										
 									</a>
-									<a title="View posts by emmahill" class="image-credit" href="<?php echo site_url(); ?>/tag/<?php echo get_field('ltk_publisher'); ?>/"><img src="http://localhost:8888/liketoknowit/wp-content/uploads/2018/09/ltklogo.svg"><?php echo get_field('ltk_publisher'); ?></a>
+									<a title="View posts by <?php echo get_field('ltk_publisher'); ?>" class="image-credit" href="<?php echo site_url(); ?>/publisher/?n=<?php echo get_field('ltk_publisher'); ?>"><img src="http://localhost:8888/liketoknowit/wp-content/uploads/2018/09/ltklogo.svg"><?php echo get_field('ltk_publisher'); ?></a>
 								<?php endif; ?>
 								</figure>
 							</div>

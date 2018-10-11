@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-
 	<main role="main" aria-label="Content">
 		<!-- section -->
 		<section>
@@ -18,7 +17,5 @@
 		</section>
 		<!-- /section -->
 	</main>
-
-<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>
