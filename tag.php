@@ -1,17 +1,45 @@
 <?php get_header(); ?>
 
-	<main role="main" aria-label="Content">
-		<!-- section -->
-		<section>
+<section class="title-block">
+	<div class="row middle-xs center-xs">
+		<div class="col-xs-12">
+			<div class="box">
+				<h1><?php echo single_tag_title(); ?></h1>
+			</div>
+		</div>
+	</div>
+</section>
 
-			<h1><?php esc_html_e( 'Tag Archive: ', 'html5blank' ); echo single_tag_title( '', false ); ?></h1>
+<section class="post-tiles">
+	<div class="container">
+		<div class="row">
 
-			<?php get_template_part( 'loop' ); ?>
+<?php 
 
-			<?php get_template_part( 'pagination' ); ?>
+if (have_posts()): while (have_posts()) : the_post(); ?>
 
-		</section>
-		<!-- /section -->
-	</main>
+
+			<div class="col-xs-12 col-md-4">
+				<?php get_template_part( 'card-loop' ); ?>
+			</div>
+
+<?php 
+
+endwhile; 
+else : ?>
+
+	<!-- article -->
+	<article>
+		<h2><?php esc_html_e( 'Sorry, nothing to display.', 'html5blank' ); ?></h2>
+	</article>
+	<!-- /article -->
+
+<?php endif; ?>
+
+</div>
+	</div>
+</section>
+
+<?php get_template_part('partials/section', 'capture_bar'); ?>
 
 <?php get_footer(); ?>
