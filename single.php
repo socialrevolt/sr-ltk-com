@@ -69,11 +69,15 @@
 
 								<div class="post-tags">
 									<ul>
-									<?php foreach ($tags as $key => $tag) { ?>
+									<?php 
+
+									if ($tags) {
+										foreach ($tags as $key => $tag) { ?>									
 										<li>
 											<a href="<?php echo site_url(); ?>/tag/<?php echo $tag->slug; ?>"><?php echo $tag->slug; ?></a>
 										</li> 
-									<?php } ?>
+									<?php } 
+									 } ?>
 									</ul>
 								</div>
 
@@ -252,6 +256,12 @@
 			</div>
 		</div>
 	</section>
+
+	<?php
+
+	get_template_part('partials/section', 'capture_bar');
+
+	?>
 </main>
 
 
