@@ -864,38 +864,40 @@ html {
       margin-top: 8px;
       margin-bottom: 0px;
       font-size: 1.4rem; }
-    html body .capture-bar .capture-form #mc_embed_signup {
-      margin-top: 10px; }
-    html body .capture-bar .capture-form * {
-      font-family: 'Gotham' !important; }
-    html body .capture-bar .capture-form ::-webkit-input-placeholder {
-      /* Chrome/Opera/Safari */
-      color: #767676; }
-    html body .capture-bar .capture-form ::-moz-placeholder {
-      /* Firefox 19+ */
-      color: #767676; }
-    html body .capture-bar .capture-form :-ms-input-placeholder {
-      /* IE 10+ */
-      color: #767676; }
-    html body .capture-bar .capture-form :-moz-placeholder {
-      /* Firefox 18- */
-      color: #767676; }
-    html body .capture-bar .capture-form input {
-      border-radius: 0px !important;
-      line-height: 54px !important;
-      height: 54px !important; }
-    html body .capture-bar .capture-form .email {
-      padding-left: 16px !important;
-      width: 75% !important; }
-    html body .capture-bar .capture-form .button {
-      margin-left: 10% !important;
-      background: transparent !important;
-      color: #000 !important;
-      font-weight: 600;
-      text-transform: uppercase !important;
-      border: 1px solid #000 !important;
-      letter-spacing: 1px !important;
-      border-radius: 0px !important; }
+    html body .capture-bar {
+      padding: 1vw 0px !important; }
+      html body .capture-bar .capture-form #mc_embed_signup {
+        margin-top: 10px; }
+      html body .capture-bar .capture-form * {
+        font-family: 'Gotham' !important; }
+      html body .capture-bar .capture-form ::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        color: #767676; }
+      html body .capture-bar .capture-form ::-moz-placeholder {
+        /* Firefox 19+ */
+        color: #767676; }
+      html body .capture-bar .capture-form :-ms-input-placeholder {
+        /* IE 10+ */
+        color: #767676; }
+      html body .capture-bar .capture-form :-moz-placeholder {
+        /* Firefox 18- */
+        color: #767676; }
+      html body .capture-bar .capture-form input {
+        border-radius: 0px !important;
+        line-height: 54px !important;
+        height: 54px !important; }
+      html body .capture-bar .capture-form .email {
+        padding-left: 16px !important;
+        width: 75% !important; }
+      html body .capture-bar .capture-form .button {
+        margin-left: 10% !important;
+        background: transparent !important;
+        color: #000 !important;
+        font-weight: 600;
+        text-transform: uppercase !important;
+        border: 1px solid #000 !important;
+        letter-spacing: 1px !important;
+        border-radius: 0px !important; }
     html body .general-page-header .row {
       min-height: 420px; }
     html body .general-page-header .header-box {
