@@ -712,6 +712,8 @@ html {
         height: 100%;
         position: absolute;
         background: rgba(0, 0, 0, 0.5); }
+      html body .category-tiles .jarallax.last::after {
+        background: #FBDCE1; }
     html body .category-tiles .box {
       position: relative; }
       html body .category-tiles .box h4 {
@@ -720,6 +722,21 @@ html {
         position: absolute;
         z-index: 8;
         width: 100%; }
+      html body .category-tiles .box.last {
+        text-align: center; }
+        html body .category-tiles .box.last h4 {
+          top: 40%;
+          margin: 0px auto;
+          width: 80%;
+          left: 10%;
+          color: #000;
+          font-size: 1.6rem;
+          transition: all .2s ease-in-out;
+          -webkit-transition: all .2s ease-in-out; }
+        html body .category-tiles .box.last:hover h4 {
+          color: #fff; }
+        html body .category-tiles .box.last:hover .jarallax::after {
+          background: #000; }
     html body .post-slider {
       max-width: 100%;
       width: 100%;
