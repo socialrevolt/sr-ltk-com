@@ -32,6 +32,11 @@ html {
   max-width: 100%;
   color: #000;
   overflow-x: hidden;
+  .post-tags {
+    a {
+      text-transform: uppercase;
+    }
+  }
   .full-width-advertisement {
     padding: 0px 0px 2vw !important;
       .container {

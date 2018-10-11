@@ -18,6 +18,7 @@
 								<?php
 
 								$category = get_the_category(); 
+								$tags = get_the_tags(); 
 
 								$count = 0;
 
@@ -65,6 +66,13 @@
 								</span>
 
 								<?php the_content(); // Dynamic Content. ?>
+
+								<div class="post-tags">
+									<?php foreach ($tags as $key => $tag) { ?>
+										<a href="<?php echo site_url(); ?>/tag/<?php echo $tag->slug; ?>"><?php echo $tag->slug; ?></a> | 
+									<?php } ?>
+								</div>
+
 
 
 								<?php echo do_shortcode('[ssba-buttons]'); ?>
