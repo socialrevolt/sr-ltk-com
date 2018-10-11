@@ -45,7 +45,7 @@
 							<!-- <div class="jarallax" data-speed="0.96" data-jarallax>
 								<img class="jarallax-img" src="http://placehold.it/650x360" alt="">
 							</div> -->
-							<a title="View posts by emmahill" class="image-credit" href="<?php echo site_url(); ?>/tag/<?php echo get_field('ltk_publisher'); ?>"><img src="<?php echo site_url(); ?>/wp-content/uploads/2018/09/ltklogo.svg"><?php echo get_field('ltk_publisher'); ?></a>
+							<a title="View posts by emmahill" class="image-credit" href="<?php echo site_url(); ?>/tag/<?php echo get_field('ltk_publisher'); ?>/"><img src="<?php echo site_url(); ?>/wp-content/uploads/2018/09/ltklogo.svg"><?php echo get_field('ltk_publisher'); ?></a>
 						</div>
 					</div>
 					<div class="col-xs-12 col-md-6 last-xs first-md">
