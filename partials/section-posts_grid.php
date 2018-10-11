@@ -41,6 +41,7 @@ $query = new WP_Query(
 				?>
 			<div class="col-xs-12 col-md-4">
 				<div class="box">
+					<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
 					<article>
 						<div class="row">
 							<div class="col-xs-5 col-md-5">
@@ -63,6 +64,7 @@ $query = new WP_Query(
 						</div>
 						
 					</article>
+				</a>
 				</div>
 			</div>
 
