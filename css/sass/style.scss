@@ -416,7 +416,7 @@ html {
       .arrows {
         display: none;
         position: absolute;
-        top: 50%;
+        top: 20% !important;
         width: 100%;
         i {
           color: rgba(0,0,0,.15);
@@ -434,6 +434,12 @@ html {
         margin-bottom: 30px !important;
         .arrows {
           display: block;
+          .prev {
+            margin-left: -30px;
+          }
+          .next {
+            margin-right: 52px;
+          }
         }
         h2 {
           font-size: 18px;

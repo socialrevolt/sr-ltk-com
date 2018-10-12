@@ -925,7 +925,7 @@ html {
       html body .posts-tiles .arrows {
         display: none;
         position: absolute;
-        top: 50%;
+        top: 20% !important;
         width: 100%; }
         html body .posts-tiles .arrows i {
           color: rgba(0, 0, 0, 0.15);
@@ -940,6 +940,10 @@ html {
           margin-bottom: 30px !important; }
           html body .posts-tiles .arrows {
             display: block; }
+            html body .posts-tiles .arrows .prev {
+              margin-left: -30px; }
+            html body .posts-tiles .arrows .next {
+              margin-right: 52px; }
           html body .posts-tiles h2 {
             font-size: 18px;
             margin-top: 0px !important; }

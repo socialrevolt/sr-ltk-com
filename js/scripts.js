@@ -65,24 +65,24 @@
             $('.nav').toggleClass('active');
         });
 
-    $('.post-slider').slick({
-      slidesToShow: 3,
-      autoplay: true,
-      speed: 600,
-      autoplaySpeed: 4200,
-      dots: true,
-      responsive: [
-        {
-          breakpoint: 767,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: true
+      $('.post-slider').slick({
+        slidesToShow: 3,
+        autoplay: true,
+        speed: 600,
+        autoplaySpeed: 4200,
+        dots: true,
+        responsive: [
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: true
+            }
           }
-        }
-      ]
-    });
+        ]
+      });
 
     $('.promotion-boxes .promotion-slider').slick({
       slidesToShow: 2,
@@ -113,6 +113,16 @@
       dots: true,
       arrows: true
     });
+
+    $('.posts-tiles .prev').click(function(){
+      var parent = $(this).parent().parent();
+      $(parent).find('.post-slider').slick('slickPrev');
+    })
+
+    $('.posts-tiles .next').click(function(){
+      var parent = $(this).parent().parent();
+      $(parent).find('.post-slider').slick('slickNext');
+    })
 
 
     $('.ltk-posts .prev').click(function(){
