@@ -796,15 +796,18 @@ html {
       @media all and (max-width: 767px) {
         html body .container {
           padding: 0px 40px; } }
-    html body .promotion-boxes {
-      padding: 0px !important; }
-      html body .promotion-boxes .box {
+    html body .promotion-slider {
+      padding: 0px !important;
+      max-width: 100% !important;
+      width: 100%;
+      margin-top: 30px !important; }
+      html body .promotion-slider .box {
         padding: 20px 40px; }
-      html body .promotion-boxes .slick-slide {
+      html body .promotion-slider .slick-slide {
         margin: 0 5px; }
-      html body .promotion-boxes .slick-track {
+      html body .promotion-slider .slick-track {
         margin: 0px !important; }
-      html body .promotion-boxes .slick-list {
+      html body .promotion-slider .slick-list {
         margin: 0 -5px; }
     html body .advertisement {
       padding: 0px !important; }
