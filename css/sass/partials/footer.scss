@@ -17,12 +17,16 @@
   }
   .powered-by {
     color: #767676;
+    margin-top: 30px;
     p {
       color: #767676;
     }
     .learn-more {
       text-transform: uppercase;
       color: #767676;
+    }
+    img {
+      max-width: 140px;
     }
   }
   .download-buttons {
@@ -128,21 +132,32 @@
   }
   @media all and (max-width: 767px) {
     padding-bottom: 0px;
+    .ltk-footer {
+      margin-top: 0px !important;
+      margin-bottom: 30px !important;
+    }
+    .powered-by {
+      p {
+        margin-top: 10px !important;
+      }
+    }
+    .learn-more {
+      margin-top: 0px !important;
+    }
     p{
       margin-top: 30px;
     }
     nav {
-      margin-top: 0px;
+      margin-bottom: 30px !important;
       ul {
-        padding: 0px !important;
-        margin-top: 0px;
+        list-style-type: none;
         li {
-          display: block;
-          margin-bottom: 12px;
+          display: inline-block !important;
+          line-height: 12px !important;
           a {
-            font-weight: 600;
-            color: #000;
-            font-size: 1rem;
+            color: #fff !important;
+            font-size: 10px !important;
+            font-weight: 300 !important;
           }
         }
       }

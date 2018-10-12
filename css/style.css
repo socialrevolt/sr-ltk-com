@@ -228,12 +228,20 @@ header {
     height: 24px; }
   header .logo {
     text-align: left; }
+  header .logo-white {
+    display: none; }
+  header .logo-black {
+    display: block; }
   @media all and (max-width: 767px) {
     header {
       text-align: center;
       padding: 24px 0px; }
       header.active {
         background: #000 !important; }
+        header.active .logo-white {
+          display: block; }
+        header.active .logo-black {
+          display: none; }
       header .logo {
         text-align: center;
         margin: 0px auto; }
@@ -458,12 +466,15 @@ header {
   .footer .logo-img {
     margin: 8px auto; }
   .footer .powered-by {
-    color: #767676; }
+    color: #767676;
+    margin-top: 30px; }
     .footer .powered-by p {
       color: #767676; }
     .footer .powered-by .learn-more {
       text-transform: uppercase;
       color: #767676; }
+    .footer .powered-by img {
+      max-width: 140px; }
   .footer .download-buttons img {
     height: 40px; }
   .footer .ltk-footer {
@@ -542,20 +553,26 @@ header {
   @media all and (max-width: 767px) {
     .footer {
       padding-bottom: 0px; }
+      .footer .ltk-footer {
+        margin-top: 0px !important;
+        margin-bottom: 30px !important; }
+      .footer .powered-by p {
+        margin-top: 10px !important; }
+      .footer .learn-more {
+        margin-top: 0px !important; }
       .footer p {
         margin-top: 30px; }
       .footer nav {
-        margin-top: 0px; }
+        margin-bottom: 30px !important; }
         .footer nav ul {
-          padding: 0px !important;
-          margin-top: 0px; }
+          list-style-type: none; }
           .footer nav ul li {
-            display: block;
-            margin-bottom: 12px; }
+            display: inline-block !important;
+            line-height: 12px !important; }
             .footer nav ul li a {
-              font-weight: 600;
-              color: #000;
-              font-size: 1rem; }
+              color: #fff !important;
+              font-size: 10px !important;
+              font-weight: 300 !important; }
       .footer .social img {
         height: 28px !important; }
       .footer .ltk-footer .subnav {

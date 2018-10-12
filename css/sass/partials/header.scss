@@ -14,11 +14,23 @@ header {
 	.logo {
 		text-align: left;
 	}
+	.logo-white {
+		display: none;
+	}
+	.logo-black {
+		display: block;
+	}
 	@media all and (max-width: 767px) {
 		text-align: center;
 		padding: 24px 0px;
 		&.active {
 			background: #000 !important;
+			.logo-white {
+				display: block;
+			}
+			.logo-black {
+				display: none;
+			}
 		}
 		.logo {
 			text-align: center;

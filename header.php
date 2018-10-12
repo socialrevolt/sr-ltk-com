@@ -63,7 +63,8 @@
 				<div class="row middle-xs center-xs">
 					<div class="col-xs-12 col-md-3">
 						<div class="logo">
-							<a href="<?php echo site_url(); ?>"><img src="<?php echo bloginfo('template_url'); ?>/img/ltk-logo-black.svg" class="logo-img" alt="LIKEtoKnow.it Logo"></a>
+							<a href="<?php echo site_url(); ?>"><img src="<?php echo bloginfo('template_url'); ?>/img/ltk-logo-black.svg" class="logo-img logo-black" alt="LIKEtoKnow.it Logo"></a>
+							<a href="<?php echo site_url(); ?>"><img src="<?php echo bloginfo('template_url'); ?>/img/ltklogo.svg" class="logo-img logo-white" alt="LIKEtoKnow.it Logo"></a>
 						</div>
 					</div>
 					<div class="col-xs-12 col-md-9 nav-container">

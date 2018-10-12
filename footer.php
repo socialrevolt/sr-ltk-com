@@ -8,24 +8,24 @@
 							<div class="ltk-footer">
 								<ul class="subnav">
 									<li><a href="https://www.instagram.com/liketoknow.it/?hl=en" target="_blank">@LIKEtoKNOW.it</a></li>
+									<li><a href="https://www.instagram.com/liketoknow.it.home/?hl=en" target="_blank">@LIKEtoKNOW.it.home</a></li>
+									<li><a href="https://www.instagram.com/liketoknow.it.family/?hl=en" target="_blank">@LIKEtoKNOW.it.family</a></li>
 									<li><a href="https://www.instagram.com/liketoknow.it.europe/?hl=en" target="_blank">@LIKEtoKNOW.it.europe</a></li>
 									<li><a href="https://www.instagram.com/liketoknow.it.BRASIL/" target="_blank">@LIKEtoKNOW.it.brasil</a></li>
-									<li><a href="https://www.instagram.com/liketoknow.it.family/?hl=en" target="_blank">@LIKEtoKNOW.it.family</a></li>
-									<li><a href="https://www.instagram.com/liketoknow.it.home/?hl=en" target="_blank">@LIKEtoKNOW.it.home</a></li>
 								</ul>
 							</div>	
 
 
 							<div class="download-buttons">
 								<div class="row center-xs">
-									<div class="col-xs-12 col-md-3 end-xs">
+									<div class="col-xs-6 col-md-3 end-xs">
 										<div class="box">	
 											<a href="https://itunes.apple.com/app/apple-store/id1154027990?pt=2050509&ct=LTK%20dot%20com&mt=8" target="_blank">
 												<img src="<?php echo bloginfo('template_url'); ?>/img/download-ltk-ios.png">
 											</a>
 										</div>
 									</div>
-									<div class="col-xs-12 col-md-3 start-xs">
+									<div class="col-xs-6 col-md-3 start-xs">
 										<div class="box">
 											<a href="https://play.google.com/store/apps/details?id=com.rewardstyle.liketoknowit&referrer=utm_source%3DLTKdotcom%26utm_medium%3Dweb">
 												<img src="<?php echo bloginfo('template_url'); ?>/img/download-ltk-android.png">
@@ -39,7 +39,7 @@
 								<div class="row bottom-xs">
 									<div class="col-xs-12 col-md-12">
 										<div class="box">
-											<p>powered by <img src="http://placehold.it/120x40"></p>
+											<p>powered by <img src="<?php echo bloginfo('template_url'); ?>/img/rewardStyle_Logo_WHITE.svg"></p>
 											<p class="learn-more">Learn more about <a href="">Influencers</a>+<a href="">Brands</a></p>
 										</div>
 									</div>
