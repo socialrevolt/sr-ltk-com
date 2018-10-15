@@ -42,29 +42,29 @@ $query = new WP_Query(
 			<div class="col-xs-12 col-md-4">
 				<div class="box">
 					<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-					<article>
-						<div class="row">
-							<div class="col-xs-5 col-md-5">
-								<figure style="max-width: 100%;">
-									<?php if ( has_post_thumbnail() ) : // Check if Thumbnail exists. ?>
-									<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-										<div class="grid-image" style="background: url('<?php echo get_the_post_thumbnail_url(); // Fullsize image for the single post. ?>') no-repeat center center; -webkit-background-size: cover; background-size: cover; -moz-background-size: cover; height: 120px; width: 100%;"></div>
+						<article>
+							<div class="row">
+								<div class="col-xs-5 col-md-5">
+									<figure style="max-width: 100%;">
+										<?php if ( has_post_thumbnail() ) : // Check if Thumbnail exists. ?>
 										
-									</a>
-									<span class="image-credit"><img src="http://localhost:8888/liketoknowit/wp-content/uploads/2018/09/ltklogo.svg"><?php echo get_field('ltk_publisher'); ?></span>
-								<?php endif; ?>
-								</figure>
-							</div>
-							<div class="col-xs-7 col-md-7">
-								<div class="box">
-									<h5 class="text--tag"><?php echo $displayCat->name; ?></h5>
-									<h4><?php echo get_the_title(); ?></h4>
+											<div class="grid-image" style="background: url('<?php echo get_the_post_thumbnail_url(); // Fullsize image for the single post. ?>') no-repeat center center; -webkit-background-size: cover; background-size: cover; -moz-background-size: cover; height: 120px; width: 100%;"></div>
+											
+										
+										<span class="image-credit"><img src="http://localhost:8888/liketoknowit/wp-content/uploads/2018/09/ltklogo.svg"><?php echo get_field('ltk_publisher'); ?></span>
+									<?php endif; ?>
+									</figure>
+								</div>
+								<div class="col-xs-7 col-md-7">
+									<div class="box">
+										<h5 class="text--tag"><?php echo $displayCat->name; ?></h5>
+										<h4><?php echo get_the_title(); ?></h4>
+									</div>
 								</div>
 							</div>
-						</div>
-						
-					</article>
-				</a>
+							
+						</article>
+					</a>
 				</div>
 			</div>
 
