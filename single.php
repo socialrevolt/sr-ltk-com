@@ -264,6 +264,9 @@
 
 	?>
 </main>
+<?php $blob = get_the_title(); ?>
+
+<input type="hidden" id="pageTitle" value="<?php print (str_replace(' ', '_', strtolower($blob))); ?>">
 
 
 

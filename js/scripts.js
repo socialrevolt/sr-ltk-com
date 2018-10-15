@@ -9,6 +9,8 @@
       $('.nav').find('.active').removeClass('.active');
     });
 
+
+
     $("body h1,h2,h3,h4,p").each(function() {
         var text = $(this).text();
         if (text.indexOf('@') > -1) {
@@ -111,6 +113,22 @@
           }
         }
       ]
+    });
+
+
+    var p;
+    var r;
+
+    if ($('.single')) {
+      p = $('#pageTitle').val();
+      r = 'marketing';
+    }
+
+
+    $('.single .thumbstrip .image').each(function(){
+      $(this).find('a').attr('href', function(i, h) {
+        return h + '&p=' + p + '&r=' + r;
+      });
     });
 
     $('.ltk-slider').slick({
