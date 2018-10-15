@@ -23,7 +23,7 @@ foreach ($category as $key => $cat) {
 				<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
 					<?php the_post_thumbnail(); // Fullsize image for the single post. ?>
 				</a>
-				<a title="View posts by <?php echo get_field('ltk_publisher'); ?>" class="image-credit" href="<?php echo site_url(); ?>/publisher/?n=<?php echo get_field('ltk_publisher'); ?>"><img src="http://localhost:8888/liketoknowit/wp-content/uploads/2018/09/ltklogo.svg"><?php echo get_field('ltk_publisher'); ?></a>
+				<span class="image-credit"><img src="http://localhost:8888/liketoknowit/wp-content/uploads/2018/09/ltklogo.svg"><?php echo get_field('ltk_publisher'); ?></span>
 			<?php } else { ?>
 
 			<?php } ?>
