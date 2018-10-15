@@ -11,8 +11,11 @@
 
     $("body h1,h2,h3,h4,p").each(function() {
         var text = $(this).text();
-        text = text.replace("@", "<span class='ltk-font'>A</span>");
-        $(this).html(text);
+        if (text.indexOf('@') > -1) {
+          text = text.replace("@", "<span class='ltk-font'>A</span>");
+          $(this).html(text);
+        }
+        
     });
 
       $('.menu-item-has-children').click(function(e){

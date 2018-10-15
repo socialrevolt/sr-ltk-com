@@ -229,8 +229,9 @@
 
 						$related_query = new WP_Query( 
 							array( 
+								'post__not_in' => array($post->ID),
 								'posts_per_page' => 10,
-								'category__and' => $r_categories
+								'category__in' => $r_categories
 							)
 						);
 
