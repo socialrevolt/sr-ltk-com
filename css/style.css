@@ -65,18 +65,23 @@
 */
 @font-face {
   font-family: "Gotham";
-  src: url("fonts/Gotham-Light.otf");
+  src: url("../fonts/Gotham-Light.otf");
   font-weight: normal;
   font-style: normal;
   font-weight: 500; }
 @font-face {
   font-family: "Gotham";
-  src: url("fonts/Gotham-Medium.otf");
+  src: url("../fonts/Gotham-Medium.otf");
   font-weight: 600;
   font-style: normal; }
 @font-face {
   font-family: "Didot";
-  src: url("fonts/Didot.ttf");
+  src: url("../fonts/Didot.ttf");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "LTK";
+  src: url("../fonts/LTK.ttf");
   font-weight: normal;
   font-style: normal; }
 html body .masthead .box {
@@ -715,6 +720,8 @@ html {
       padding-bottom: 0px !important; }
     html body .ltk-posts {
       padding-bottom: 0px !important; }
+    html body .ltk-font {
+      font-family: 'LTK' !important; }
     html body section {
       padding: 2vw 0px; }
     html body a {
@@ -726,20 +733,28 @@ html {
       line-height: 1.2;
       font-size: 2.6rem;
       font-family: 'Didot' !important; }
+      html body h1 span {
+        font-size: 2.6rem; }
     html body h2 {
       font-size: 2rem;
       font-family: 'Gotham' !important;
       font-weight: 300;
       text-transform: uppercase; }
+      html body h2 span {
+        font-size: 2rem; }
     html body h3 {
       font-size: 1.6rem;
       font-family: 'Gotham' !important; }
+      html body h3 span {
+        font-size: 1.6rem; }
     html body h4 {
       font-weight: 300;
       letter-spacing: 1px;
       font-size: 1rem;
       text-transform: uppercase;
       font-family: 'Gotham' !important; }
+      html body h4 span {
+        font-size: 1rem; }
     html body p {
       font-size: 1rem;
       line-height: 2.4;

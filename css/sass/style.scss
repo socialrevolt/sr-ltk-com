@@ -108,6 +108,16 @@ html {
     .ltk-posts {
       padding-bottom: 0px !important;
     }
+    .ltk-font {
+      font-family: 'LTK' !important;
+      // height: 20px;
+      // width: 20px;
+      // margin-right: 8px;
+      // display: inline-block;
+      // background: url('http://localhost:8888/wpengine-ltk/wp-content/uploads/2018/09/ltklogo.svg') no-repeat center center;
+      // background-size: cover;
+      // -webkit-background-size: cover; 
+    }
     section {
       padding: 2vw 0px;
     }
@@ -122,16 +132,25 @@ html {
       line-height: 1.2;
       font-size: 2.6rem;
       font-family: 'Didot' !important;
+      span {
+        font-size: 2.6rem;
+      }
     }
     h2 {
       font-size: 2rem;
       font-family: 'Gotham' !important;
       font-weight: 300;
       text-transform: uppercase;
+      span {
+        font-size: 2rem;
+      }
     }
     h3 {
       font-size: 1.6rem;
       font-family: 'Gotham' !important;
+      span {
+        font-size: 1.6rem;
+      }
     }
     h4 {
       font-weight: 300;
@@ -139,6 +158,9 @@ html {
       font-size: 1rem;
       text-transform: uppercase;
       font-family: 'Gotham' !important;
+      span {
+        font-size: 1rem;
+      }
     }
     p {
       font-size: 1rem;

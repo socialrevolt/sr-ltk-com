@@ -7,7 +7,13 @@
       $('.header').toggleClass('active');
       $('.nav').toggleClass('visible');
       $('.nav').find('.active').removeClass('.active');
-    })
+    });
+
+    $("body h1,h2,h3,h4,p").each(function() {
+        var text = $(this).text();
+        text = text.replace("@", "<span class='ltk-font'>A</span>");
+        $(this).html(text);
+    });
 
       $('.menu-item-has-children').click(function(e){
         if ($(window).width() < 767) {
