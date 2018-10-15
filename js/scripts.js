@@ -10,7 +10,9 @@
     })
 
       $('.menu-item-has-children').click(function(e){
-        e.preventDefault();        
+        if ($(window).width() < 767) {
+          e.preventDefault();     
+        }   
         if ($(this).hasClass('active')) {
           $(this).removeClass('active');
           $(this).find('ul').removeClass('active');
@@ -18,10 +20,7 @@
           $('.nav').find('.active').removeClass('active');
           $(this).toggleClass('active');
           $(this).find('ul').toggleClass('active');
-        }
-
-        
-        
+        }        
       });
 
     	$('.slider').slick({

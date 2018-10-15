@@ -242,7 +242,9 @@ $('#email_content').on('click', 'a.gram_link, a.cta, a.blog_link', function() {
 function ajaxGetGram(hash) {
   var api_url = 'https://api.liketoknow.it/api/v1/ltks/';
   $.get(api_url + hash, function(data) {
-    
+   
+    console.log(data);
+
     $('.hash').val(hash);
 
     var products = data.data.products;
