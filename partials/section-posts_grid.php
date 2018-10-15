@@ -51,7 +51,7 @@ $query = new WP_Query(
 											<div class="grid-image" style="background: url('<?php echo get_the_post_thumbnail_url(); // Fullsize image for the single post. ?>') no-repeat center center; -webkit-background-size: cover; background-size: cover; -moz-background-size: cover; height: 120px; width: 100%;"></div>
 											
 										
-										<span class="image-credit"><img src="http://localhost:8888/liketoknowit/wp-content/uploads/2018/09/ltklogo.svg"><?php echo get_field('ltk_publisher'); ?></span>
+										<span class="image-credit"><img src="<?php echo site_url(); ?>/wp-content/uploads/2018/09/ltklogo.svg"><?php echo get_field('ltk_publisher'); ?></span>
 									<?php endif; ?>
 									</figure>
 								</div>
