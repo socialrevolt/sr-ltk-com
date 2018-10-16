@@ -39,6 +39,7 @@
 				<div>
 				<div class="row middle-xs">
 					<div class="col-xs-12 col-md-6 last-md first-xs">
+						<a href="<?php echo get_the_permalink(); ?>">
 						<div class="box">
 
 							<img class="jarallax-img" src="<?php echo get_the_post_thumbnail_url(); // Fullsize image for the single post. ?>" alt="">
@@ -47,6 +48,7 @@
 							</div> -->
 							<span class="image-credit"><img src="<?php echo site_url(); ?>/wp-content/uploads/2018/09/ltklogo.svg"><?php echo get_field('ltk_publisher'); ?></span>
 						</div>
+					</a>
 					</div>
 					<div class="col-xs-12 col-md-6 last-xs first-md">
 						<div class="box">

@@ -282,7 +282,7 @@ function ajaxGetGram(hash) {
       $('.hero').attr('src',hero_image);
 
       $('.author-meta').append('<img class="author" src="' + avatar_url + '">');
-      $('.author-meta').append('<h2><img style="height: 24px;" src="https://sliketoknowit.wpengine.com/wp-content/uploads/2018/09/ltklogo.svg">' + display_name + '</h2>');
+      $('.author-meta').append('<h2><img style="height: 24px;" src="http://sliketoknowit.wpengine.com/wp-content/uploads/2018/09/ltklogo.svg">' + display_name + '</h2>');
       // selection
       $('#product_container .image_add').click(function() {
           $(this).addClass('selected');

@@ -438,6 +438,22 @@ function myplguin_admin_page(){
     require_once('ltk-generator/index.php');
 }
 
+// filter
+function my_posts_where( $where )
+{
+
+    global $wpdb;
+    $where = str_replace(
+        "meta_key = 'ltk_code_blocks_",
+        "meta_key LIKE 'ltk_code_blocks_",
+        $wpdb->remove_placeholder_escape( $where )
+    );
+    return $where;
+}
+
+
+add_filter('posts_where', 'my_posts_where');
+
 // Register Custom Post Type
 function make_ad_posttype() {
 

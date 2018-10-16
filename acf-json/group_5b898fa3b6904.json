@@ -357,6 +357,25 @@
                             "load_terms": 0,
                             "return_format": "id",
                             "multiple": 0
+                        },
+                        {
+                            "key": "field_5bc6358401ca2",
+                            "label": "Publisher",
+                            "name": "publisher",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "Use the publisher's handle to query all posts with this publisher in the post",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
                         }
                     ],
                     "min": "",
@@ -469,5 +488,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1539274306
+    "modified": 1539716531
 }
