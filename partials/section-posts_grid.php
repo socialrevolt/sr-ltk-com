@@ -10,11 +10,35 @@ $tags = get_sub_field('taxonomy');
 $categories = get_sub_field('category');
 // $sort_by = get_sub_field('sort_by');
 
+$publisher = get_sub_field('publisher');
+
+
+if ($publisher) {
+	$meta_query = array(
+		'relation' => 'OR',
+		array(
+			'key'     => 'ltk_publisher',
+			'compare' => '=',
+	        'value'   => $publisher
+	    ),
+	    array(
+			'key'     => 'ltk_code_blocks_%_publisher',
+			'compare'   => 'LIKE',
+	        'value'   => $publisher					        
+	    )
+	);
+} else {
+	$meta_query = [];
+}
+
+
 $query = new WP_Query( 
 		array( 
 			'category__in' => $categories,
 			'tag__in' => $tags,
-			'posts_per_page' => $count
+			'posts_per_page' => $count,
+			'suppress_filters' => FALSE,
+			'meta_query' => $meta_query
 		)
 	);
 

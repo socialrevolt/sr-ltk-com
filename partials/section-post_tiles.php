@@ -22,19 +22,18 @@ $title = get_sub_field('title');
 				$sort_by = get_sub_field('sort_by');
 				$publisher = get_sub_field('publisher');
 
-
 				if ($publisher) {
 					$meta_query = array(
 						'relation' => 'OR',
 						array(
 							'key'     => 'ltk_publisher',
 							'compare' => '=',
-					        'value'   => 'jennajenovic'
+					        'value'   => $publisher
 					    ),
 					    array(
 							'key'     => 'ltk_code_blocks_%_publisher',
 							'compare'   => 'LIKE',
-					        'value'   => 'jennajenovic'						        
+					        'value'   => $publisher					        
 					    )
 					);
 				} else {
@@ -45,9 +44,9 @@ $title = get_sub_field('title');
 					array( 
 						'suppress_filters' => FALSE,
     					'posts_per_page' => 10,
-    					'meta_query' => $meta_query
-						// 'category__in' => $categories, // Display posts that have this category (and any children of that category), using category id
-						// 'tag__in' => $tags,
+    					'meta_query' => $meta_query,
+						'category__in' => $categories, // Display posts that have this category (and any children of that category), using category id
+						'tag__in' => $tags
 						// 'category__in' => 4, // Display posts that have this category (not children of that category)
 						// 'cat' => '2,6,17,38', // Display posts that have these categories, using category id
 						// 'cat' => '-12,-34,-56', // Display all posts except those from a category by prefixing its id with a '-' (minus) sign.
