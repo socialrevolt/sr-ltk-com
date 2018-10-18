@@ -218,19 +218,27 @@ $('#newsletter_type').change(function() {
 });
 
 $('#admin_content').on('click', '.image_add', function() {
-  var new_image = $(this).children('img').attr("src");
-  var new_link;
-  if ($('#newsletter_type').val() === 'GS') {
-      new_link = $(this).attr("data-gs_link");
-  } else {
-      new_link = $(this).attr("data-reg_link");
-  }
-  $('.active .prod:first img').attr("src", new_image);
-  $('.active .prod:first img').wrap('<a href="' + new_link + amplitude_tracking + '" target="_blank"></a>');
-    // $('.active .prod:first img').parent('a').attr("href", new_link);
-  $('.active .prod:first img').attr("data-gs_link", $(this).attr("data-gs_link"));
-  $('.active .prod:first img').attr("data-reg_link", $(this).attr("data-reg_link"));
-  $('.active .prod:first').addClass('prodx').removeClass('prod');
+  // var new_image = $(this).children('img').attr("src");
+  // var url = new URL($(this).attr("data-reg_link"));
+      
+  // var params = new URLSearchParams(url.search);
+  // params.delete('__cid');
+
+  // var new_link = url.href + url.pathname + '?'  + params.toString();
+
+  // console.log(params.toString())
+
+  // console.log(new_link);
+
+  // $('.active .prod:first img').attr("src", new_image);
+  // $('.active .prod:first img').wrap('<a href="' + new_link + amplitude_tracking + '" target="_blank"></a>');
+  //   // $('.active .prod:first img').parent('a').attr("href", new_link);
+
+
+
+  // $('.active .prod:first img').attr("data-gs_link", new_link);
+  // $('.active .prod:first img').attr("data-reg_link", new_link);
+  // $('.active .prod:first').addClass('prodx').removeClass('prod');
 });
 
 $('#email_content').on('click', 'a.gram_link, a.cta, a.blog_link', function() {
@@ -261,15 +269,18 @@ function ajaxGetGram(hash) {
     $('#form').fadeOut();
 
 
+    console.log(data);
+
     // Product loop
     products.forEach(function(product) {
-      console.log(product);
       var img = product.image_url;
       
       var ltk_link = 'https://www.liketoknow.it/ltk/' + ltk_hash + amplitude_tracking;
       var ltk_email = product.links.ltk_email;
+
       var gs_email = product.links.gs_email;
-      $('#product_container').append('<div class="image_add" data-reg_link="' + product.links.ltk_email + '"data-gs_link="' + product.links.gs_email + '"><img src="' + img + '" /></div>');
+      $('#product_container').append('<div class="image_add" data-reg_link="' + ltk_email + '"data-gs_link="' + ltk_email + '"><img src="' + img + '" /></div>');
+    
     });
     // End product loop
 
@@ -291,8 +302,16 @@ function ajaxGetGram(hash) {
 
           var images = [];
 
-          console.log($(this).attr('data-reg_link'));
           var display_link = $(this).attr('data-reg_link');
+
+          var url = new URL(display_link);
+      
+          var params = new URLSearchParams(url.search);
+          params.delete('__cid');
+
+          var newUrl = url.origin + url.pathname + '?'  + params.toString();
+
+          console.log(url);
 
           $('.thumbstrip img').each(function(item,val){
             images.push($(val).attr('src'));
@@ -301,7 +320,7 @@ function ajaxGetGram(hash) {
           if (images.indexOf(img) !== -1) {
             $('.thumbstrip').find('img[src="' + img + '"]').parent().parent().remove();
           } else if (images.length < 4) {
-            $('.thumbstrip').append('<div class="col-xs-3 col-md-3 image"><div class="box"><a href="' + display_link + '" target="_blank"><img src="' + img + '"></a></div></div>');
+            $('.thumbstrip').append('<div class="col-xs-3 col-md-3 image"><div class="box"><a href="' + newUrl + '" target="_blank"><img src="' + img + '"></a></div></div>');
           }
           
       });
