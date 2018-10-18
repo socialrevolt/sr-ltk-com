@@ -263,6 +263,7 @@ function ajaxGetGram(hash) {
 
     // Product loop
     products.forEach(function(product) {
+      console.log(product);
       var img = product.image_url;
       
       var ltk_link = 'https://www.liketoknow.it/ltk/' + ltk_hash + amplitude_tracking;

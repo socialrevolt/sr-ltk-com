@@ -32,6 +32,10 @@ html {
   max-width: 100%;
   color: #000;
   overflow-x: hidden;
+  a, a:active, a:focus { 
+   outline: none !important; 
+   ie-dummy: expression(this.hideFocus=true);
+  }
   .post-tags {
     ul {
       list-style-type: none;
@@ -557,6 +561,29 @@ html {
         display: block;
         letter-spacing: 2.5px;
         font-size: .875rem;
+      }
+      @media all and (max-width: 767px) {
+        .container {
+          padding: 0px 20px;
+        }
+        .content {
+          h4 {
+            font-size: 8px;
+            margin-top: 30px !important;
+            margin-bottom: 0px;
+          }
+          h1 {
+            margin-bottom: 8px;
+            font-size: 30px;
+            margin-top: 12px;
+            width: 100%;
+            max-width: 100% !important;
+          }
+          p {
+            margin-bottom: 0px
+          }
+        }
+         
       }
       
     }
