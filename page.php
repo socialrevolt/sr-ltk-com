@@ -125,4 +125,6 @@
 		</section> 
 
 	<?php } ?>
+
+	<?php get_template_part('partials/section', 'capture_bar'); ?>
 <?php get_footer(); ?>
