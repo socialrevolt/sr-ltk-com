@@ -39,8 +39,8 @@
 								<div class="row bottom-xs">
 									<div class="col-xs-12 col-md-12">
 										<div class="box">
-											<p>powered by <img src="<?php echo bloginfo('template_url'); ?>/img/rewardStyle_Logo_WHITE.svg"></p>
-											<p class="learn-more">Learn more about <a href="">Influencers</a>+<a href="">Brands</a></p>
+											<p>powered by <a href="https://rewardstyle.com" target="_blank"><img src="<?php echo bloginfo('template_url'); ?>/img/rewardStyle_Logo_WHITE.svg"></a></p>
+											<p class="learn-more">Learn more about <a href="https://rewardstyle.com" target="_blank">Influencers</a>+<a href="https://rewardstyle.com/about/brands" target="_blank">Brands</a></p>
 										</div>
 									</div>
 								</div>	

@@ -104,6 +104,8 @@ html body .masthead .box {
       margin-top: 12px; }
     html body .masthead p {
       margin-bottom: 0px; }
+    html body .masthead .slick-dots {
+      left: 0px; }
     html body .masthead .ssba img {
       width: 24px !important; }
     html body .masthead .btn {

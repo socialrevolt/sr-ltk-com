@@ -77,6 +77,7 @@
 
       $('.post-slider').slick({
         slidesToShow: 3,
+        slidesToScroll: 3,
         autoplay: true,
         speed: 600,
         autoplaySpeed: 4200,
