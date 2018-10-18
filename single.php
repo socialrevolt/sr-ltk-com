@@ -189,7 +189,10 @@
 								$url = get_field('url'); 
 								$desktop_image = get_field('desktop_image'); ?>
 	 								<div>
-									<a href="<?php echo $url; ?>" target="_blank" class="ad-banner"><img src="<?php echo $desktop_image; ?>"></a>
+										<a href="<?php echo $url; ?>" target="_blank" class="ad-banner">
+											<img src="<?php echo get_field('desktop_image'); ?>" class="hide-mobile" style="width: 100%;">
+											<img src="<?php echo get_field('mobile_image'); ?>" class="show-mobile" style="width: 100%;">
+										</a>
 								</div>
 
 								<?php endwhile;
