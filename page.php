@@ -7,8 +7,8 @@
 				<div class="col-xs-12 col-md-6">
 					<div class="box">
 						<div class="header-box">
-							<h2 class="text--white">Title</h2>
-							<h2 class="text--white bottom-line">Subheader</h2>
+							<h2 class="text--white"><?php echo get_field('headline'); ?></h2>
+							<h2 class="text--white bottom-line"><?php echo get_field('subheader'); ?></h2>
 						</div>
 					</div>
 				</div>
