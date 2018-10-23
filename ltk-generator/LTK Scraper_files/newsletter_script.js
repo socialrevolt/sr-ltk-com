@@ -257,6 +257,7 @@ function ajaxGetGram(hash) {
 
     var products = data.data.products;
     var hero_image = data.data.hero_image;
+    hero_image = hero_image.replace(/^http:\/\//i, 'https://');
   
     // LTK Meta
     var display_name = data.data.profile.display_name;
@@ -294,7 +295,7 @@ function ajaxGetGram(hash) {
       $('.hero').attr('src',hero_image);
 
       $('.author-meta').append('<img class="author" src="' + avatar_url + '">');
-      $('.author-meta').append('<h2><img style="height: 24px;" src="http://sliketoknowit.wpengine.com/wp-content/uploads/2018/09/ltklogo.svg">' + display_name + '</h2>');
+      $('.author-meta').append('<h2><img style="height: 24px;" src="https://liketoknowit.com/wp-content/uploads/2018/10/ltklogoblack.svg">' + display_name + '</h2>');
       // selection
       $('#product_container .image_add').click(function() {
           $(this).addClass('selected');
@@ -311,16 +312,16 @@ function ajaxGetGram(hash) {
 
           var newUrl = url.origin + url.pathname + '?'  + params.toString();
 
-          console.log(url);
-
           $('.thumbstrip img').each(function(item,val){
             images.push($(val).attr('src'));
           });
 
+          img = img.replace(/^http:\/\//i, 'https://');
+
           if (images.indexOf(img) !== -1) {
             $('.thumbstrip').find('img[src="' + img + '"]').parent().parent().remove();
           } else if (images.length < 4) {
-            $('.thumbstrip').append('<div class="col-xs-3 col-md-3 image"><div class="box"><a href="' + newUrl + '" target="_blank"><img src="' + img + '"></a></div></div>');
+            $('.thumbstrip').append('<div class="col-xs-3 col-md-3 image"><div class="box"><a href="' + newUrl + '" target="_blank"><img src="' + img + '" alt=""></a></div></div>');
           }
           
       });
