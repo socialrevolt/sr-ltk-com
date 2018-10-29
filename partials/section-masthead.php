@@ -14,7 +14,8 @@
 			);
 		} else {
 			$args = array(
-				'posts_per_page' => 5
+				'posts_per_page' => 5,
+				'post_date' => 'DESC'
 			);
 		}
 		$the_query = new WP_Query($args);
