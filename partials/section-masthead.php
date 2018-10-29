@@ -2,7 +2,6 @@
 	<div class="container masthead-slider">
 		<?php
 
-
 		$selected_posts = get_sub_field('selected_posts');
 
 		// The Query
@@ -10,7 +9,8 @@
 		if ($selected_posts) {
 			$args = array(
 				'post__in' => $selected_posts,
-				'orderby' => 'post__in'
+				// 'orderby' => 'post__in',
+				'post_date' => 'DESC'
 			);
 		} else {
 			$args = array(
