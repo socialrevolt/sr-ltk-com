@@ -715,7 +715,7 @@ html {
       font-weight: 100;
       text-align: right;
       margin-top: 8px;
-      font-size: .725rem;
+      font-size: .5rem;
       width: 100%;
       display: block; }
       html body .image-credit img {
@@ -923,7 +923,7 @@ html {
       html body .posts-grid article h5 {
         margin-top: 0px; }
       html body .posts-grid article h4 {
-        font-size: 1.2rem;
+        font-size: 1rem;
         text-transform: none;
         font-weight: 600;
         margin-top: 8px;
