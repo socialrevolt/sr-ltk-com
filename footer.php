@@ -27,7 +27,7 @@
 									</div>
 									<div class="col-xs-6 col-md-3 start-xs">
 										<div class="box">
-											<a href="https://play.google.com/store/apps/details?id=com.rewardstyle.liketoknowit&referrer=utm_source%3DLTKdotcom%26utm_medium%3Dweb">
+											<a href="https://play.google.com/store/apps/details?id=com.rewardstyle.liketoknowit&referrer=utm_source%3DLTKdotcom%26utm_medium%3Dweb" target="_blank">
 												<img src="<?php echo bloginfo('template_url'); ?>/img/download-ltk-android.png">
 											</a>
 										</div>

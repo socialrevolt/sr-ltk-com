@@ -310,7 +310,8 @@ header {
         -webkit-transition: all .2s ease-in-out;
         -moz-transition: all .2s ease-in-out;
         z-index: 9;
-        position: relative; }
+        position: relative;
+        cursor: default; }
         .nav ul li a:hover {
           text-decoration: none;
           color: #000; }
@@ -336,7 +337,8 @@ header {
             padding: 0px 0px; }
             .nav ul li ul li:last-child a {
               border: 0px;
-              color: #000; }
+              color: #000;
+              cursor: pointer; }
             .nav ul li ul li:last-child:hover {
               background: transparent; }
               .nav ul li ul li:last-child:hover a {
@@ -535,7 +537,7 @@ header {
           margin-right: 4px;
           padding-right: 6px; }
           .footer nav ul li a:hover {
-            color: #000;
+            color: #fff;
             font-weight: 600;
             text-decoration: none; }
         .footer nav ul li:last-child a {

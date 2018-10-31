@@ -68,6 +68,7 @@
         -moz-transition: all .2s ease-in-out;
         z-index: 9;
         position: relative;
+        cursor: default;
         &:hover {
           text-decoration: none;
           color: #000;
@@ -99,6 +100,7 @@
             a {
               border: 0px;
               color: #000;
+              cursor: pointer;
             }
             &:hover {
               background: transparent;
