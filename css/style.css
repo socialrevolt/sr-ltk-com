@@ -671,6 +671,22 @@ html {
     html body a, html body a:active, html body a:focus {
       outline: none !important;
       ie-dummy: expression(this.hideFocus=true); }
+    html body .black-bar {
+      background: #000;
+      position: relative; }
+      html body .black-bar p {
+        color: #fff;
+        font-size: 16px;
+        font-family: 'Didot' !important;
+        text-transform: none !important; }
+      html body .black-bar .phone img {
+        bottom: -40%;
+        height: 550px;
+        max-width: 100%;
+        position: absolute; }
+    html body .text--didot {
+      font-family: 'Didot';
+      text-transform: none !important; }
     html body .post-tags ul {
       list-style-type: none;
       margin: 0px;
@@ -807,6 +823,10 @@ html {
         color: #fff;
         text-decoration: none;
         border: 1px solid #000; }
+      html body .btn.btn-pink {
+        background: #fbdce1;
+        border: 0px;
+        font-weight: bold; }
       html body .btn.btn-secondary {
         background: #fff;
         color: #000; }
