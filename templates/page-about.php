@@ -14,7 +14,7 @@ get_header(); ?>
 					<div class="box">
 							<h1 class="text--white text--didot">LIKEtoKNOW.it is the single largest influencer shopping channel and consumer media platform.</h1>
 							<p class="text--white text--didot">Millions of inspired shoppers use our app, website, newsletter and social channels every day to discover, curate, and shop influencer content. </p>
-							<a href="" class="btn btn-pink">Download the app</a>
+							<a href="http://hyperurl.co/fjl8nn" target="_blank" class="btn btn-pink">Download the app</a>
 					</div>
 				</div>
 			</div>
@@ -48,7 +48,7 @@ get_header(); ?>
 				</div>
 				<div class="col-xs-12 col-md-3">
 					<div class="box phone">
-						<img src="http://localhost:8888/wpengine-ltk/wp-content/uploads/2018/10/phone.png">
+						<img src="http://sliketoknowit.wpengine.com/wp-content/uploads/2018/10/phone.png">
 					</div>
 				</div>
 			</div>
@@ -67,7 +67,7 @@ get_header(); ?>
 							<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 								<h3 style="margin: 10% auto 5%;" class="text--didot">Whether you're looking for new favorite influencers, the perfect pair of booties, or the living room couch you’ve been on the hunt for, it’s all here on the LIKEtoKNOW.it app.</h3>
 
-								<img style="margin: 5% auto;" src="http://localhost:8888/wpengine-ltk/wp-content/uploads/2018/10/Group-10.jpg">
+								<a href="http://hyperurl.co/fjl8nn" target="_blank"><img style="margin: 5% auto;" src="http://localhost:8888/wpengine-ltk/wp-content/uploads/2018/10/Group-10.jpg"></a>
 								<?php the_content(); ?>
 
 							</article>
