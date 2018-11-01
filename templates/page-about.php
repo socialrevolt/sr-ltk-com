@@ -9,12 +9,12 @@ get_header(); ?>
 
 	<section class="general-page-header" style="background: url('<?php echo get_the_post_thumbnail_url(); // Fullsize image for the single post. ?>') no-repeat top center; background-size: cover; -webkit-background-size: cover; -moz-background-size: cover;">
 		<div class="container">
-			<div class="row middle-xs">
+			<div class="row middle-xs center-xs start-md">
 				<div class="col-xs-12 col-md-6">
 					<div class="box">
-							<h1 class="text--white text--didot">LIKEtoKNOW.it is the single largest influencer shopping channel and consumer media platform.</h1>
-							<p class="text--white">Millions of inspired shoppers use our app, website, newsletter and social channels every day to discover, curate, and shop influencer content. </p>
-							<a href="http://hyperurl.co/fjl8nn" target="_blank" class="btn btn-pink">Download the app</a>
+						<h1 class="text--white text--didot">LIKEtoKNOW.it is the single largest influencer shopping channel and consumer media platform.</h1>
+						<p class="text--white">Millions of inspired shoppers use our app, website, newsletter and social channels every day to discover, curate, and shop influencer content. </p>
+						<a href="http://hyperurl.co/fjl8nn" target="_blank" class="btn btn-pink">Download the app</a>
 					</div>
 				</div>
 			</div>
@@ -55,37 +55,40 @@ get_header(); ?>
 		</div>	
 	</section>
 
+<div class="hide-mobile">
+
 	<section>
 		<div class="container">
 			<div class="row center-xs middle-xs">
 				<div class="col-xs-12 col-md-10 content center-xs">
 					<div class="box">
 
-						<?php if ( have_posts()) : while ( have_posts() ) : the_post(); ?>
+						
+							<?php if ( have_posts()) : while ( have_posts() ) : the_post(); ?>
 
-							<!-- article -->
-							<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-								<h3 style="margin: 10% auto 5%;">Whether you're looking for new favorite influencers, the perfect pair of booties, or the living room couch you’ve been on the hunt for, it’s all here on the LIKEtoKNOW.it app.</h3>
+								<!-- article -->
+								<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+									<h3 style="margin: 10% auto 5%;">Whether you're looking for new favorite influencers, the perfect pair of booties, or the living room couch you’ve been on the hunt for, it’s all here on the LIKEtoKNOW.it app.</h3>
 
-								<a href="http://hyperurl.co/fjl8nn" target="_blank"><img style="margin: 5% auto;" src="<?php echo site_url(); ?>/wp-content/uploads/2018/10/Group-10.jpg"></a>
-								<?php the_content(); ?>
+									<a href="http://hyperurl.co/fjl8nn" target="_blank"><img style="margin: 5% auto;" src="<?php echo site_url(); ?>/wp-content/uploads/2018/10/Group-10.jpg"></a>
+									<?php the_content(); ?>
 
-							</article>
-							<!-- /article -->
+								</article>
+								<!-- /article -->
 
-						<?php endwhile; ?>
+							<?php endwhile; ?>
 
-						<?php else : ?>
+							<?php else : ?>
 
-							<!-- article -->
-							<article>
+								<!-- article -->
+								<article>
 
-								<h2><?php esc_html_e( 'Sorry, nothing to display.', 'html5blank' ); ?></h2>
+									<h2><?php esc_html_e( 'Sorry, nothing to display.', 'html5blank' ); ?></h2>
 
-							</article>
-							<!-- /article -->
+								</article>
+								<!-- /article -->
 
-						<?php endif; ?>
+							<?php endif; ?>
 
 					</div>
 				</div>
@@ -93,6 +96,26 @@ get_header(); ?>
 		</div>
 	</section> 
 
+</div>
+
+<section class="show-mobile mobile-content">
+	<div class="container">
+		<div class="row middle-xs">
+			<div class="col-xs-6">
+				<div class="box">
+					<h3 style="margin: 10% auto 5%;">Whether you're looking for new favorite influencers, the perfect pair of booties, or the living room couch you’ve been on the hunt for, it’s all here on the LIKEtoKNOW.it app.</h3>
+				</div>
+			</div>
+			<div class="col-xs-6">
+				<div class="box">
+					<img src="http://sliketoknowit.wpengine.com/wp-content/uploads/2018/10/phone.png">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<a href="http://hyperurl.co/fjl8nn" target="_blank"><img style="margin: 0px auto 0px;" src="<?php echo site_url(); ?>/wp-content/uploads/2018/10/Group-10.jpg"></a>
 
 	<?php get_template_part('partials/section', 'capture_bar'); ?>
 <?php get_footer(); ?>

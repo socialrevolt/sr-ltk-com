@@ -725,3 +725,38 @@ html {
     }
   }
 }
+
+@media all and (max-width: 767px) {
+  html {
+    body {
+      &.page-template-page-about {
+        .general-page-header {
+          position: relative;
+          h1 {
+            font-size: 28px !important;
+          }
+          p {
+            font-size: 12px;
+            line-height: 1.7;
+          }
+          a {
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            width: 100%;
+            right: 0px;
+          }
+        }
+        .phone {
+          display: none;
+        }
+        .mobile-content {
+          margin: 10% auto;
+          h3 {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}

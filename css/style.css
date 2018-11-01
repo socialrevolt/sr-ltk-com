@@ -1152,3 +1152,24 @@ html {
     @media all and (max-width: 767px) {
       html body .hide-mobile {
         display: none; } }
+
+@media all and (max-width: 767px) {
+  html body.page-template-page-about .general-page-header {
+    position: relative; }
+    html body.page-template-page-about .general-page-header h1 {
+      font-size: 28px !important; }
+    html body.page-template-page-about .general-page-header p {
+      font-size: 12px;
+      line-height: 1.7; }
+    html body.page-template-page-about .general-page-header a {
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      width: 100%;
+      right: 0px; }
+  html body.page-template-page-about .phone {
+    display: none; }
+  html body.page-template-page-about .mobile-content {
+    margin: 10% auto; }
+    html body.page-template-page-about .mobile-content h3 {
+      font-size: 12px; } }
