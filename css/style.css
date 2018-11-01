@@ -676,8 +676,7 @@ html {
       position: relative; }
       html body .black-bar p {
         color: #fff;
-        font-size: 16px;
-        font-family: 'Didot' !important;
+        font-size: 14px;
         text-transform: none !important; }
       html body .black-bar .phone img {
         bottom: -40%;
