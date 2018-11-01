@@ -673,6 +673,7 @@ html {
       ie-dummy: expression(this.hideFocus=true); }
     html body .black-bar {
       background: #000;
+      padding: 1vw 0px !important;
       position: relative; }
       html body .black-bar p {
         color: #fff;
