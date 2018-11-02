@@ -44,6 +44,27 @@
     		infinite: true
     	});
 
+      $('.black-bar-slider').slick({
+        dots: false,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        infinite: true,
+        responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            fade: true,
+            dots: false
+          }
+        }
+      ]
+      });
+
       $('.masthead-slider').slick({
         dots: true,
         slidesToShow: 1,

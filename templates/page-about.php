@@ -24,24 +24,17 @@ get_header(); ?>
 	<section class="black-bar">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-12 col-md-9">
+				<div class="col-xs-12 col-md-9 start-md center-xs">
 					<div class="box content-boxes">
-						<div class="row">
-							<div class="col-xs-12 col-sm-4">
-								<div class="box">
-									<p>100% shoppable<br>Shop new fashion, home, beauty looks and more daily</p>
-									
-								</div>
-							</div>	
-							<div class="col-xs-12 col-md-4">
-								<div class="box">
-									<p>Endless discovery<br>Find new influencers and follow who inspires you</p>
-								</div>
+						<div class="black-bar-slider">
+							<div class="box">
+								<p>100% shoppable<br>Shop new fashion, home, beauty looks and more daily</p>
 							</div>
-							<div class="col-xs-12 col-md-4">
-								<div class="box">
-									<p>Create your lifestyle collection<br>Track of all your likes, loves, and Wish List items in one place</p>
-								</div>
+							<div class="box">
+								<p>Endless discovery<br>Find new influencers and follow who inspires you</p>
+							</div>
+							<div class="box">
+								<p>Create your lifestyle collection<br>Track of all your likes, loves, and Wish List items in one place</p>
 							</div>
 						</div>
 					</div>
@@ -113,9 +106,13 @@ get_header(); ?>
 			</div>
 		</div>
 	</div>
+
+	<div class="col-xs-12 col-md-10">
+		<a href="http://hyperurl.co/fjl8nn" target="_blank"><img style="margin: 60px auto 0px;" src="<?php echo site_url(); ?>/wp-content/uploads/2018/10/Group-10.jpg"></a>
+	</div>
 </section>
 
-<a href="http://hyperurl.co/fjl8nn" target="_blank"><img style="margin: 0px auto 0px;" src="<?php echo site_url(); ?>/wp-content/uploads/2018/10/Group-10.jpg"></a>
+
 
 	<?php get_template_part('partials/section', 'capture_bar'); ?>
 <?php get_footer(); ?>
