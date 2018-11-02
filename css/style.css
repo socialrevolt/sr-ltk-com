@@ -679,6 +679,15 @@ html {
         color: #fff;
         font-size: 14px;
         text-transform: none !important; }
+        html body .black-bar p b {
+          font-weight: 600 !important; }
+      html body .black-bar .black-bar-slider .box {
+        padding: 0px 20px; }
+        html body .black-bar .black-bar-slider .box:first-child {
+          padding-left: 0px; }
+      @media all and (max-width: 767px) {
+        html body .black-bar .black-bar-slider .box {
+          padding: 0px !important; } }
       html body .black-bar .phone img {
         bottom: -40%;
         height: 550px;

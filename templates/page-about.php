@@ -28,13 +28,13 @@ get_header(); ?>
 					<div class="box content-boxes">
 						<div class="black-bar-slider">
 							<div class="box">
-								<p>100% shoppable<br>Shop new fashion, home, beauty looks and more daily</p>
+								<p><b>100% shoppable</b><br>Shop new fashion, home, beauty looks and more daily</p>
 							</div>
 							<div class="box">
-								<p>Endless discovery<br>Find new influencers and follow who inspires you</p>
+								<p><b>Endless discovery</b><br>Find new influencers and follow who inspires you</p>
 							</div>
 							<div class="box">
-								<p>Create your lifestyle collection<br>Track of all your likes, loves, and Wish List items in one place</p>
+								<p><b>Create your lifestyle collection</b><br>Track of all your likes, loves, and Wish List items in one place</p>
 							</div>
 						</div>
 					</div>
