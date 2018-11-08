@@ -151,16 +151,17 @@
     $('.single .thumbstrip .image').each(function(){
       $(this).find('a').attr('href', function(i, h) {
 
-        var dup = h;
-        var li = dup.split('&')[1];
 
-        p = p.replace(/[^\w\s]/gi, '');
+        var dup = h; // Original url to manipulate
+        var li = dup.split('li=')[1]; // Get li query parameter
 
-        var url = new URL(h);
+        p = p.replace(/[^\w\s]/gi, ''); // Remove all special characters from the url 
+
+        var url = new URL(h); 
         var params = new URLSearchParams(p.search);
-        params.set('__cid','1044'); 
+        params.set('__cid','1044'); // Set the __cid for the url 
 
-        var newUrl = url.origin + url.pathname + '?'  + params.toString() + '&' + li + '&p=' + p + '&r=' + r;
+        var newUrl = url.origin + url.pathname + '?'  + params.toString() + '&li=' + li + '&p=' + p + '&r=' + r;
 
         return newUrl;
       });
