@@ -91,9 +91,27 @@ html body .masthead .box {
     width: 100%; }
   html body .masthead .box .btn {
     margin-top: 40px; }
+html body .masthead .arrows {
+  display: none; }
 @media all and (max-width: 767px) {
   html body .masthead {
     padding-top: 30px !important; }
+    html body .masthead .arrows {
+      display: block;
+      position: absolute;
+      top: 40%;
+      width: 100%;
+      left: 0px;
+      padding: 0px 8px;
+      z-index: 8; }
+      html body .masthead .arrows .next {
+        float: right; }
+      html body .masthead .arrows i {
+        color: rgba(0, 0, 0, 0.15);
+        font-size: 24px;
+        cursor: pointer; }
+        html body .masthead .arrows i:hover {
+          color: black; }
     html body .masthead h4 {
       font-size: 8px;
       margin-top: 20px;
@@ -355,12 +373,13 @@ header {
       left: 0px;
       top: 64px;
       background: rgba(0, 0, 0, 0.95);
-      z-index: 8;
+      z-index: 0;
       width: 100%;
       padding: 20px 0px;
       opacity: 0 !important; }
       .nav.visible {
-        opacity: 1 !important; }
+        opacity: 1 !important;
+        z-index: 8; }
       .nav ul li {
         float: none !important;
         text-align: center !important;

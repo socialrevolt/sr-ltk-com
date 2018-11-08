@@ -11,8 +11,31 @@ html {
 					margin-top: 40px;
 				}
 			}
+			.arrows {
+				display: none;
+			}
 			@media all and (max-width: 767px) {
 				padding-top: 30px !important;
+				.arrows {
+					display: block;
+					position: absolute;
+					top: 40%;
+					width: 100%;
+					left: 0px;
+					padding: 0px 8px;
+					z-index: 8;
+					.next {
+						float: right;
+					}
+					i {
+						color: rgba(0,0,0,.15);
+				          font-size: 24px;
+				          cursor: pointer;
+				          &:hover  {
+				            color: rgba(0,0,0,1);
+				          }
+					}
+				}
 				h4 {
 					font-size: 8px;
 					margin-top: 20px;
@@ -23,7 +46,7 @@ html {
 					font-size: 30px;
 					margin-top: 12px;
 				}
-				p {
+		p {
 					margin-bottom: 0px
 				}
 				.slick-dots {

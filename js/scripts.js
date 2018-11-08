@@ -150,6 +150,7 @@
 
     $('.single .thumbstrip .image').each(function(){
       $(this).find('a').attr('href', function(i, h) {
+        p = p.replace(/[^\w\s]/gi, '')
         return h + '&p=' + p + '&r=' + r;
       });
     });
@@ -180,6 +181,14 @@
 
     $('.ltk-posts .next').click(function(){
       $('.ltk-slider').slick('slickNext');
+    })
+
+    $('.masthead .prev').click(function(){
+      $('.masthead-slider').slick('slickPrev');
+    })
+
+    $('.masthead .next').click(function(){
+      $('.masthead-slider').slick('slickNext');
     })
 
 	});

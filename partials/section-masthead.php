@@ -1,4 +1,8 @@
 <section class="masthead">
+	<div class="arrows">
+			<i class="fas fa-chevron-left prev"></i>
+			<i class="fas fa-chevron-right next"></i>
+		</div>
 	<div class="container masthead-slider">
 		<?php
 
