@@ -150,8 +150,19 @@
 
     $('.single .thumbstrip .image').each(function(){
       $(this).find('a').attr('href', function(i, h) {
-        p = p.replace(/[^\w\s]/gi, '')
-        return h + '&p=' + p + '&r=' + r;
+
+        var dup = h;
+        var li = dup.split('&')[1];
+
+        p = p.replace(/[^\w\s]/gi, '');
+
+        var url = new URL(h);
+        var params = new URLSearchParams(p.search);
+        params.set('__cid','1044'); 
+
+        var newUrl = url.origin + url.pathname + '?'  + params.toString() + '&' + li + '&p=' + p + '&r=' + r;
+
+        return newUrl;
       });
     });
 
