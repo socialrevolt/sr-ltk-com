@@ -308,7 +308,7 @@ function ajaxGetGram(hash) {
           var url = new URL(display_link);
       
           var params = new URLSearchParams(url.search);
-          params.set('__cid','1044'); 
+          params.set('__cid','1144'); 
 
           var newUrl = url.origin + url.pathname + '?'  + params.toString();
 
