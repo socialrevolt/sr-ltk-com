@@ -14,7 +14,7 @@ get_header(); ?>
 					<div class="box">
 						<h1 class="text--white text--didot">LIKEtoKNOW.it is the single largest influencer shopping channel and consumer media platform.</h1>
 						<p class="text--white">Millions of inspired shoppers use our app, website, newsletter and social channels every day to discover, curate, and shop influencer content. </p>
-						<a href="http://hyperurl.co/fjl8nn" target="_blank" class="btn btn-pink">Download the app</a>
+						<a href="https://ltk.app.link/fLHsPHg3MR" target="_blank" class="btn btn-pink">Download the app</a>
 					</div>
 				</div>
 			</div>
@@ -108,7 +108,7 @@ get_header(); ?>
 	</div>
 
 	<div class="col-xs-12 col-md-10">
-		<a href="http://hyperurl.co/fjl8nn" target="_blank"><img style="margin: 60px auto 0px;" src="<?php echo site_url(); ?>/wp-content/uploads/2018/10/Group-10.jpg"></a>
+		<a href="https://ltk.app.link/gFj5s4l3MR" target="_blank"><img style="margin: 60px auto 0px;" src="<?php echo site_url(); ?>/wp-content/uploads/2018/10/Group-10.jpg"></a>
 	</div>
 </section>
 
