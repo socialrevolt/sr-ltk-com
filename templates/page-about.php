@@ -41,7 +41,7 @@ get_header(); ?>
 				</div>
 				<div class="col-xs-12 col-md-3">
 					<div class="box phone">
-						<img src="http://sliketoknowit.wpengine.com/wp-content/uploads/2018/10/phone.png">
+						<img src="https://sliketoknowit.wpengine.com/wp-content/uploads/2018/10/phone.png">
 					</div>
 				</div>
 			</div>
@@ -63,7 +63,7 @@ get_header(); ?>
 								<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 									<h3 style="margin: 10% auto 5%;">Whether you're looking for new favorite influencers, the perfect pair of booties, or the living room couch you’ve been on the hunt for, it’s all here on the LIKEtoKNOW.it app.</h3>
 
-									<a href="http://hyperurl.co/fjl8nn" target="_blank"><img style="margin: 5% auto;" src="<?php echo site_url(); ?>/wp-content/uploads/2018/10/Group-10.jpg"></a>
+									<a href="https://ltk.app.link/fLHsPHg3MR" target="_blank"><img style="margin: 5% auto;" src="<?php echo site_url(); ?>/wp-content/uploads/2018/10/Group-10.jpg"></a>
 									<?php the_content(); ?>
 
 								</article>
@@ -101,7 +101,7 @@ get_header(); ?>
 			</div>
 			<div class="col-xs-6">
 				<div class="box">
-					<img src="http://sliketoknowit.wpengine.com/wp-content/uploads/2018/10/phone.png">
+					<img src="https://sliketoknowit.wpengine.com/wp-content/uploads/2018/10/phone.png">
 				</div>
 			</div>
 		</div>

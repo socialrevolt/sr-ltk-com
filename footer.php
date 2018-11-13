@@ -20,14 +20,14 @@
 								<div class="row center-xs">
 									<div class="col-xs-6 col-md-3 end-xs">
 										<div class="box">	
-											<a href="https://itunes.apple.com/app/apple-store/id1154027990?pt=2050509&ct=LTK%20dot%20com&mt=8" target="_blank">
+											<a href="https://ltk.app.link/GgNcpefCOR" target="_blank">
 												<img src="<?php echo bloginfo('template_url'); ?>/img/download-ltk-ios.png">
 											</a>
 										</div>
 									</div>
 									<div class="col-xs-6 col-md-3 start-xs">
 										<div class="box">
-											<a href="https://play.google.com/store/apps/details?id=com.rewardstyle.liketoknowit&referrer=utm_source%3DLTKdotcom%26utm_medium%3Dweb" target="_blank">
+											<a href="https://ltk.app.link/3T30fhkCOR" target="_blank">
 												<img src="<?php echo bloginfo('template_url'); ?>/img/download-ltk-android.png">
 											</a>
 										</div>
