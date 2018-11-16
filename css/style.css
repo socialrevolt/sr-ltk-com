@@ -738,15 +738,16 @@ html {
         html body .full-width-advertisement {
           margin-bottom: 40px; } }
     html body .app-banner {
-      background: #000;
       width: 100%;
       text-align: center;
-      max-width: 75%;
+      max-width: 90%;
       margin: 25% auto 0px;
       padding: 30px; }
       html body .app-banner h1 {
         margin: 0px;
         max-width: 100% !important; }
+      html body .app-banner img {
+        width: 100%; }
       html body .app-banner .btn {
         color: #fff;
         border: 1px solid #fff; }
