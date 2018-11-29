@@ -40,6 +40,14 @@
 						}
 					}
 				}
+
+				if (get_the_post_thumbnail_url($post->ID,'post-featured-image')) {
+					$feat_url = get_the_post_thumbnail_url($post->ID,'post-featured-image');
+				} else {
+					get_the_post_thumbnail_url();
+				 // Fullsize image for the single post. 
+				}
+
 				?>
 				<div>
 				<div class="row middle-xs">
@@ -47,7 +55,7 @@
 						<a href="<?php echo get_the_permalink(); ?>">
 						<div class="box">
 
-							<img class="jarallax-img" src="<?php echo get_the_post_thumbnail_url(); // Fullsize image for the single post. ?>" alt="">
+							<img class="jarallax-img" src="<?php echo $feat_url; // Fullsize image for the single post. ?>" alt="">
 							<!-- <div class="jarallax" data-speed="0.96" data-jarallax>
 								<img class="jarallax-img" src="http://placehold.it/650x360" alt="">
 							</div> -->
