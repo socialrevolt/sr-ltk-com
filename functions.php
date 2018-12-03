@@ -509,3 +509,10 @@ function make_ad_posttype() {
 
 }
 add_action( 'init', 'make_ad_posttype', 0 );
+
+if( function_exists('acf_add_options_page') ) {
+    
+    acf_add_options_page();
+    
+}
+

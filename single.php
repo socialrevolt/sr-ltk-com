@@ -111,9 +111,9 @@
 											<div class="row">
 												<div class="col-xs-12">
 													<div class="box">
-														<a href="https://ltk.app.link/zKJlbnj3TR" target="_blank">
+														<a href="<?php echo get_field('gallery_end_slide_link','option'); ?>" target="_blank">
 															<div class="app-banner">
-																<img src="https://sliketoknowit.wpengine.com/wp-content/uploads/2018/11/LTKContentSeries-CTA-SweaterDresses.png">
+																<img src="<?php echo get_field('gallery_end_slide','option'); ?>">
 															</div>
 														</a>
 													</div>
