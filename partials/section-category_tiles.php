@@ -43,12 +43,23 @@
 				$count++;
 			}
 
+			$tile_text = get_sub_field('tile_text');
+			$tile_link = get_sub_field('tile_link');
+
+			if (!$tile_text) {
+				$tile_text = 'See More In The App';
+			}
+
+			if (!$tile_link) {
+				$tile_link = 'https://ltk.app.link/gFj5s4l3MR';
+			}
+
 			?>
 
 			<div class="col-xs-6 col-md-3">
 				<div class="box last">
-					<a href="https://ltk.app.link/gFj5s4l3MR" target="_blank">
-						<h4 class="text--white">See More In The App</h4>
+					<a href="<?php echo $tile_link; ?>" target="_blank">
+						<h4 class="text--white"><?php echo $tile_text; ?></h4>
 						<div class="jarallax last" data-speed="0.96" data-jarallax>
 							<img class="jarallax-img" src="https://sliketoknowit.wpengine.com/wp-content/uploads/2018/10/fitness-tile.jpg" >
 						</div>

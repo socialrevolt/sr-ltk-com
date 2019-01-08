@@ -7,8 +7,7 @@
 		<?php
 
 		$selected_posts = get_sub_field('selected_posts');
-
-		// The Query
+		$selected_category = get_sub_field('selected_category');
 
 		if ($selected_posts) {
 			$args = array(
@@ -19,6 +18,7 @@
 		} else {
 			$args = array(
 				'posts_per_page' => 5,
+				'cat' => $selected_category,
 				'post_date' => 'DESC'
 			);
 		}
