@@ -1,2 +1,295 @@
+html {
+  width: 100%;
+  overflow-x: hidden; }
+  html body {
+    width: 100%;
+    overflow-x: hidden; }
+    html body p {
+      line-height: 220%;
+      font-weight: 600;
+      margin-bottom: 48px; }
+    html body .menu-toggle {
+      display: none;
+      font-size: 24px; }
+    html body .slider.desktop {
+      display: block; }
+    html body .slider.mobile {
+      display: none; }
+    html body #slideHeader .desktop {
+      display: block; }
+    html body #slideHeader .mobile {
+      display: none; }
+
+#slideHeader {
+  height: auto; }
+
 #missionBox {
-  background: #f2f2f2; }
+  position: relative;
+  z-index: -1;
+  margin-top: -480px; }
+  #missionBox .box {
+    background: #f2f2f2;
+    padding-top: 240px;
+    padding: 480px 21% 60px;
+    text-align: center; }
+    #missionBox .box p {
+      line-height: 240% !important;
+      font-weight: 500;
+      margin-bottom: 60px; }
+      #missionBox .box p b {
+        color: #000; }
+
+#tourDates {
+  position: relative;
+  margin-bottom: 100px; }
+  #tourDates .box {
+    margin-top: -60px;
+    background: transparent;
+    border: 2px solid #000;
+    padding: 80px 0px 60px; }
+    #tourDates .box .tour-date {
+      margin-bottom: 50px;
+      color: #000; }
+    #tourDates .box h1 {
+      font-family: 'Didot' !important;
+      margin: 0px auto 20px;
+      color: #000;
+      font-size: 2.5rem; }
+    #tourDates .box h4 {
+      margin: 0px;
+      font-size: 1rem;
+      color: #000; }
+  #tourDates .credits {
+    max-width: 50%;
+    margin: 90px auto 8px; }
+    #tourDates .credits p {
+      margin-bottom: 0px;
+      font-weight: 500;
+      line-height: 150%; }
+    #tourDates .credits img {
+      margin-top: 0px;
+      max-width: 60%; }
+
+#testimonialSlider .slider {
+  width: 100%; }
+  #testimonialSlider .slider .slide {
+    width: 100%;
+    cursor: pointer; }
+    #testimonialSlider .slider .slide .quote {
+      max-width: 40%;
+      margin-left: 80px;
+      margin-top: 45px;
+      font-size: 2rem;
+      color: #fff;
+      line-height: 140%;
+      font-weight: 600; }
+
+#buyTheBook {
+  margin-top: 160px; }
+  #buyTheBook .box {
+    background: #f2f2f2;
+    padding: 60px 160px; }
+    #buyTheBook .box .box-contain {
+      padding: 0px 5%;
+      margin: 0 auto; }
+    #buyTheBook .box img {
+      margin-top: -160px; }
+
+#followMyStory .box {
+  padding: 60px 160px; }
+
+#thumbnailStrip .thumbnail-container {
+  max-width: 1140px;
+  margin: 0 auto; }
+  #thumbnailStrip .thumbnail-container .thumbnail {
+    width: 210px;
+    height: 210px;
+    display: inline-block;
+    margin-right: 18px; }
+    #thumbnailStrip .thumbnail-container .thumbnail:last-child {
+      margin-right: 0px; }
+
+#downloadTheApp {
+  padding: 60px 0px;
+  margin-top: 60px;
+  color: #000 !important; }
+  #downloadTheApp .desktop {
+    display: block;
+    margin-left: -60px;
+    margin-top: 15px; }
+  #downloadTheApp .mobile {
+    display: none; }
+  #downloadTheApp h1 {
+    font-family: 'Didot' !important;
+    font-size: 3rem; }
+  #downloadTheApp p {
+    max-width: 55%;
+    margin-left: 50px;
+    margin-top: 70px; }
+  #downloadTheApp ul {
+    list-style-type: none;
+    margin: 0px auto 0px 50px;
+    padding: 0px; }
+    #downloadTheApp ul li {
+      display: inline-block;
+      margin: 0px 10px;
+      width: 40%; }
+      #downloadTheApp ul li:first-child {
+        margin-left: 0px; }
+  #downloadTheApp .box {
+    position: relative; }
+  #downloadTheApp .foreground {
+    position: absolute;
+    bottom: -10px;
+    right: 10px;
+    max-width: 200px; }
+
+.btn {
+  color: #000;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 8px 20px;
+  border: 2px solid #000;
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out; }
+  .btn:hover {
+    background: #000;
+    color: #fff;
+    text-decoration: none; }
+
+@media all and (max-width: 767px) {
+  html {
+    font-size: 62.5% !important; }
+    html body {
+      font-size: 62.5% !important; }
+      html body .slider.desktop {
+        display: none !important; }
+      html body .slider.mobile {
+        display: block !important; }
+      html body .logo {
+        max-width: 75%;
+        margin: 30px auto !important; }
+      html body .menu-toggle {
+        display: block;
+        margin-top: 20px;
+        position: relative;
+        z-index: 8; }
+      html body .btn {
+        line-height: 42px;
+        display: block; }
+      html body .nav {
+        display: none;
+        position: absolute;
+        z-index: 5;
+        background: rgba(242, 242, 242, 0.95);
+        max-width: 75%;
+        left: 12.5%;
+        top: 30px; }
+        html body .nav.active {
+          display: block !important; }
+        html body .nav ul li {
+          display: block;
+          margin: 40px auto; }
+          html body .nav ul li a {
+            font-size: .825rem;
+            color: #000; }
+      html body #slideHeader .desktop {
+        display: none; }
+      html body #slideHeader .mobile {
+        display: block; }
+        html body #slideHeader .mobile .slider {
+          margin-bottom: 0px; }
+        html body #slideHeader .mobile .slick-dots {
+          display: none !important; }
+      html body .container {
+        padding: 0px 12.5%; }
+      html body #missionBox {
+        margin-top: 0px; }
+        html body #missionBox .box {
+          padding: 20px; }
+      html body #tourDates {
+        margin-bottom: 0px; }
+        html body #tourDates .box {
+          border: 0px;
+          margin-top: 0px;
+          padding: 50px 0px; }
+          html body #tourDates .box .tour-date h1 {
+            margin-bottom: 4px; }
+          html body #tourDates .box .tour-date a {
+            display: block; }
+        html body #tourDates .credits {
+          max-width: 75%; }
+          html body #tourDates .credits p {
+            margin-bottom: 12px; }
+      html body #testimonialSlider .container {
+        max-width: 100%;
+        padding: 0px; }
+        html body #testimonialSlider .container .slider .slide .quote {
+          font-size: 1.4rem;
+          margin-left: 7.5%;
+          max-width: 55%; }
+      html body #buyTheBook {
+        margin-top: 80px; }
+        html body #buyTheBook .box {
+          padding: 0px 10px 20px; }
+          html body #buyTheBook .box img {
+            margin-top: -40px; }
+      html body #followMyStory {
+        margin-top: 60px; }
+        html body #followMyStory .box {
+          padding: 0px; }
+      html body #thumbnailStrip .thumbnail-container {
+        margin-top: 40px;
+        text-align: center; }
+        html body #thumbnailStrip .thumbnail-container .thumbnail {
+          width: 40%;
+          height: auto;
+          margin: 10px; }
+          html body #thumbnailStrip .thumbnail-container .thumbnail:nth-of-type(5) {
+            display: none; }
+      html body #downloadTheApp {
+        text-align: center;
+        color: #000 !important; }
+        html body #downloadTheApp .container {
+          padding: 0px 20px; }
+        html body #downloadTheApp .mobile {
+          display: block; }
+          html body #downloadTheApp .mobile h1 {
+            font-size: 2.4rem; }
+        html body #downloadTheApp .desktop {
+          display: none; }
+        html body #downloadTheApp p {
+          max-width: 100%;
+          margin-top: 30px;
+          margin-bottom: 0px;
+          margin-left: 0px; }
+        html body #downloadTheApp .images img {
+          display: none; }
+          html body #downloadTheApp .images img.foreground {
+            display: block;
+            position: relative;
+            right: 0px;
+            bottom: 0px;
+            margin: 0 auto 0px; }
+        html body #downloadTheApp ul {
+          margin-top: 60px;
+          margin-left: 0px; }
+          html body #downloadTheApp ul li {
+            display: block;
+            width: 100%;
+            margin: 20px auto;
+            text-align: center; }
+            html body #downloadTheApp ul li img {
+              max-width: 60%; } }
+@media all and (min-width: 768px) and (max-width: 1000px) {
+  html body .nav ul li a {
+    padding: 8px 8px; }
+  html body #tourDates .box {
+    max-width: 480px;
+    margin: -60px auto 0px; }
+  html body #thumbnailStrip .thumbnail-container {
+    text-align: center; }
+    html body #thumbnailStrip .thumbnail-container .thumbnail {
+      width: 15%; } }

@@ -1,0 +1,38 @@
+/**
+ * modules/variables
+ * ---
+ */
+/**
+ * Typography
+ */
+/**
+ * Colors
+ */
+/**
+ * Grid
+ */
+.bg--gray {
+  background: #f2f2f2; }
+
+.bg--pink {
+  background: #fbdce1; }
+
+.bg--black {
+  background: black; }
+  .bg--black * {
+    color: #fff; }
+
+.text--white {
+  color: #fff; }
+
+.text--title {
+  margin-bottom: 4vw; }
+
+.text--didot {
+  font-family: 'Didot' !important; }
+
+.text--tag {
+  font-size: .875rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase; }
